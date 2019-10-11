@@ -1,0 +1,620 @@
+body {
+    background-color: #f7f7f6;
+    // overflow: hidden;
+}
+
+/* 
+*头部布局
+ */
+header {
+    width: 100%;
+    height: 78px;
+    border-bottom: 1px solid #ccc;
+}
+
+.head {
+    width: 980px;
+    margin: 0 auto;
+
+    .index_img {
+        width: 206px;
+        height: 35px;
+        cursor: pointer;
+        float: left;
+        margin-top: 20px;
+
+        img {
+            width: 206px;
+            height: 35px;
+        }
+    }
+
+    ;
+
+
+
+    .suggest {
+        float: right;
+        font-size: 12px;
+        color: #bbb;
+        margin-top: 56px;
+
+        &:hover {
+            color: #8c222c;
+        }
+    }
+}
+
+/*
+*头部结束 开始主体部分
+*/
+main {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        line-height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+/*
+    *注册页面
+    */
+.main_regist {
+    padding-left: 150px;
+    padding-top: 30px;
+    display: none;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 500;
+        color: #666;
+    }
+
+    .info_zhuce {
+        width: 300px;
+
+        /*
+        *空格
+        */
+        .font_14 {
+            width: 300px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: red;
+            display: none;
+           
+        }
+    }
+}
+.font_15{
+    width: 200px;
+            font-size: 14px;
+            color: red;
+            display: none;
+            position: absolute;
+            top: 150px;
+}
+/*
+*表格部分
+*/
+#register {
+    position: relative;
+
+    .regist {
+        margin-top: 10px;
+
+        li {
+            background: red;
+            position: relative;
+            height: 38px;
+
+            /*
+            *框格式
+            */
+            input {
+                width: 262px;
+                height: 18px;
+                line-height: 18px;
+                padding: 10px 18px;
+                font-size: 14px;
+                outline: none;
+
+            }
+
+            input::-webkit-input-placeholder {
+                color: #dedede;
+            }
+
+            input::-moz-placeholder {
+                color: #dedede;
+            }
+
+            input:-moz-placeholder {
+                color: #dedede;
+            }
+
+            input:-ms-input-placeholder {
+                color: #dedede;
+            }
+
+         
+
+       
+        }
+
+    
+    }
+}
+
+   /*
+            *验证码
+            */
+            .sendInsz {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 7px;
+                background: #f3f0e9;
+                color: #666;
+                font-size: 12px;
+                width: 75px;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+            }
+
+/*
+*中间间隔线
+*/
+.border_bot {
+    height: 1px;
+    width: 298px;
+    background-color: #e5e5e5;
+}
+
+    /*
+     * 小眼睛
+     */
+     .yanjing {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 13px;
+        color: #999;
+        width: 19px;
+        height: 12px;
+        font-size: 14px;
+    }
+    .yanjing1 {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 13px;
+        color: #999;
+        width: 19px;
+        height: 12px;
+        font-size: 14px;
+    }
+    .yanjing2{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 13px;
+        color: #999;
+        width: 19px;
+        height: 12px;
+        font-size: 14px;
+    }
+/*
+    *错误信息框
+    */
+.pos_info{
+    position: absolute;
+    left: 310px;
+    top: 0;
+    line-height: 38px;
+    white-space: nowrap;
+    color: #D13333;
+    display: none;
+    span{
+        font-size: 14px;
+    }
+}
+/*
+*密码强度
+*/
+.pos_info_p{
+    color: #666;
+}
+/*
+*协议
+*/
+.xieyi {
+    margin-top: 12px;
+    font-size: 12px;
+
+    input {
+        width: 12px;
+        height: 12px;
+        background: #e6e6e6;
+        border-radius: 2px;
+        vertical-align: middle;
+        margin-bottom: 2px;
+    }
+
+    .xieyi_l {
+        float: left;
+        color: #999999;
+    }
+
+    .xieyi_r {
+        float: right;
+
+        a {
+            color: #999999;
+        }
+    }
+    &:after{
+        content: ".";
+        display: block;
+        height: 0;
+        line-height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+
+
+/*
+*注册
+*/
+.m_t {
+    width: 300px;
+    height: 40px;
+    margin-top: 35px;
+
+    
+}
+#submit{
+    display: block;
+    width: 100%;
+    background: #8c222c;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 3px;
+    letter-spacing: 10px;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        background-color: #7b111b;
+    }
+}
+
+/*
+*登录
+*/
+.login_box {
+    position: relative;
+    width: 300px;
+    padding-top: 75px;
+    padding-left: 150px;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 500;
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 40px;
+    }
+
+    .img_scan {
+        width: 62px;
+        height: 62px;
+        position: absolute;
+        top: 43px;
+        right: 0;
+        cursor: pointer;
+    }
+}
+
+.wrap_300 {
+    width: 300px;
+
+    .youbiandianji{
+        text-align: right;
+    }
+    .yanzhengma {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 12px;
+        color: #666;
+
+        &:hover {
+            color: #222;
+        }
+    }
+}
+
+// 用户名账号密码登录
+#login {
+    ul {
+        margin-top: 10px;
+
+        li {
+            height: 39px;
+            background-color: #fff;
+            position: relative;
+
+            input {
+                width: 262px;
+                height: 18px;
+                line-height: 18px;
+                padding: 10px 18px;
+                font-size: 14px;
+                outline: none;
+
+            }
+        }
+    }
+}
+/*
+* 登录框
+*/
+.login_submit{
+    margin-top: 35px;
+    #login_in_sub{
+        display: block;
+        width: 100%;
+        border:none;
+        background: #8c222c;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 3px;
+        letter-spacing: 10px;
+        cursor: pointer;
+    }
+}
+
+/*
+* 空白部分
+*/
+.kongbai{
+    width: 300px;
+    height: 1px;
+    margin-top: 30px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/*
+*下面其他网站
+*/
+.other_web{
+    height: 26px;
+    line-height: 26px;
+    margin-top: 10px;
+    font-size: 12px;
+    a{
+        color: #666;
+        display: block;
+        float: left;
+
+    }
+    .wecheat{
+        margin-right: 34px;
+        width: 108px;
+        background: #77a877;
+        color: #fff;
+        text-align: center;
+        border-radius: 3px;
+    }
+    .weibo{
+        float: right;
+    }
+}
+    
+/*
+*手机号登录
+*/
+  #login_ph{
+      width: 300px;
+      display: none;
+      ul{
+          margin-top: 10px;
+          border:none;
+          li{
+            background: #fff;
+            position: relative;
+            height: 39px;
+            .sendInsy{
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 7px;
+                background: #f3f0e9;
+                color: #666;
+                font-size: 12px;
+                width: 75px;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+            }
+            input{
+                width: 262px;
+                height: 18px;
+                line-height: 18px;
+                padding: 10px 18px;
+                font-size: 14px;
+              
+            }
+        }
+      }
+  }  
+/*
+*设置新密码
+*/
+  .mk_pwd{
+      font-size: 12px;
+      height: 18px;
+      margin-top: 10px;
+      a{
+        color: #333333;
+      }
+      .icon-shuangxiajiantou{
+          font-size: 12px;
+          width: 12px;
+          height: 12px;
+      }
+  }
+ .login_ph_sub{
+     margin-top: 35px;
+     #login_ph_sub{
+         display: block;
+         border:none;
+         width: 100%;
+         background: #8c222c;
+         height: 40px;
+         line-height: 40px;
+         color: #fff;
+         font-size: 16px;
+         text-align: center;
+         border-radius: 3px;
+         letter-spacing: 10px;
+         cursor: pointer;
+     }
+ }
+/*
+*扫码登录
+*/
+.scan{
+    display: block;
+    width: 300px;
+    padding-left: 150px;
+    padding-top: 75px;
+    position: relative;
+    h3{
+        font-size: 30px;
+        font-weight: 500;
+        color: #666;
+        line-height: 40px;
+    }
+    .sao_de{
+        font-size: 12px;
+        line-height: 12px;
+        color:#999999;
+    }
+    .scan_img{
+        width: 62px;
+        height: 62px;
+        position: absolute;
+        top: 43px;
+        right: 0;
+        cursor: pointer;
+    }
+    .scan_content{
+        width: 300px;
+        height: 188px;
+        margin:46px 0 40px 0;
+        text-align: center;
+        img{
+            width: 160px;
+            height: 160px;
+            display: block;
+            margin-left: 70px;
+            margin-bottom: 10px;
+        }
+        span{
+            display: block;
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+            a{
+                color: #9e100e;
+            }
+        }
+    }
+}
+
+/*
+*手机验证码切换
+*/
+/*
+    *右侧部分
+    */
+.right_box {
+    position: absolute;
+    top: 50px;
+    left: 750px;
+    background: #eee;
+    width: 100%;
+
+    .info_box {
+        padding: 7px 20px;
+        line-height: 30px;
+        font-size: 16px;
+        color: #999;
+
+        .have_code {
+            margin-right: 15px;
+
+        }
+
+        .to_login_in {
+            &:hover {
+                color: #8c222c;
+            }
+        }
+    }
+}
+
+.right_box_hide{
+    display: none;
+}
+
+/*
+*尾部
+*/
+footer{
+    width: 100%;
+    height: 30px;
+    margin:0 auto;
+    border-top: 1px solid #e5e5e5;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    // margin-top:31px;
+    position: fixed;
+    bottom: 0;
+    .footer{
+        width: 980px;
+        height: 30px;
+        margin:0 auto;
+        text-align: center;
+        .footer_left{
+            color: #999999;
+
+            float:left;
+        }
+        .footer_right{
+            float:right;
+            a{
+                margin:0 4px;
+                color: #8999A9;
+            }
+        }
+    }
+}

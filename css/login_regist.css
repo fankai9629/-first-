@@ -1,0 +1,14 @@
+body{
+    background-color: #f7f7f6;
+}
+/* 头部布局 */
+header{
+    width: 100%;
+    height: 78px;
+    border-bottom: 1px solid #ccc;
+}
+.head{
+    width: 980px;
+    margin:0 auto;
+    
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../scss/login_regist.css">
+    <link rel="stylesheet" href="../css/common_css/li_ul_a.css">
+    <link rel="stylesheet" href="../css/iconfont/font_regist/iconfont.css">
+    <link rel="stylesheet" href="../css/iconfont/font_regist1/iconfont.css">
+    <script src="../dist/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../sys/ajax.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="head">
+            <a href="./index.html" class="index_img">
+                <img src="../image/img_regist/206.png" alt="">
+            </a>
+            <a href="javascript:;" class="suggest">
+                给新版本提意见
+            </a>
+        </div>
+    </header>
+    <main>
+        <!-- 注册页面 -->
+        <div class="main_regist">
+            <h3>注册</h3>
+            <div class="info_zhuce">
+                <div class="font_14">
+                    手机号已被注册，请<a href="">登录</a>
+                </div>
+                <form action="" id="register">
+                    <ul class="regist">
+                        <!-- 手机号 -->
+                        <li>
+                            <div class="input_box">
+                                <input type="text" name="phone" id="phone" placeholder="手机号">
+                            </div>
+                            <div class="pos_info ">
+                                <span class="iconfont icon-jiantouzuo zhuce_shouji">请输入手机号</span>
+                            </div>
+                        </li>
+                        <div class="border_bot"></div>
+                        <!-- 验证码 -->
+                        <li>
+                            <input type="text" placeholder="短信验证码" id="message">
+                            <a href="javascript:;" class="sendIns sendInsz">获取验证码</a>
+                            <i style="display: none;"></i>
+                            <div class="pos_info ">
+                                <span class="iconfont icon-jiantouzuo">短信验证码错误</span>
+                            </div>
+                        </li>
+                        <div class="border_bot"></div>
+                        <!-- 用户名 -->
+                        <li>
+                            <input type="text" placeholder="用户名（昵称），注册后不可更改" id="username">
+                            <div class="pos_info ">
+                                <span class="iconfont icon-jiantouzuo">请输入用户名</span>
+                            </div>
+                        </li>
+                        <div class="border_bot"></div>
+                        <!-- 设置密码 -->
+                        <li>
+                            <input type="password" placeholder="设置密码" id="password">
+                            <a href="javascript:;" class="yanjing"><span id="togglePassword"
+                                    class="iconfont icon-biyan"></span></a>
+                                    <div>
+                            <div class="pos_info">
+                                <span class="iconfont icon-jiantouzuo">请设置密码</span>
+                            </div>
+                            <div class="pos_info pos_info_p pos_info_l">
+                                <span class="iconfont icon-jiantouzuo">密码安全度：低</span>
+                            </div>
+                            <div class="pos_info pos_info_p pos_info_m">
+                                <span class="iconfont icon-jiantouzuo">密码安全度：中</span>
+                            </div>
+                            <div class="pos_info pos_info_p pos_info_h">
+                                <span class="iconfont icon-jiantouzuo">密码安全度：高</span>
+                            </div>
+                        </div>
+                        </li>
+                    </ul>
+                    <!-- 协议 -->
+                    <div class="xieyi">
+                        <input type="checkbox" checked="checked" class="dianji_xieyi"   >
+                        <span>我已阅读并接受孔网</span>
+                        <a href="javascript:;">《服务协议》</a>和
+                        <a href="javascript:;">《账户协议》</a>
+                    </div>
+                    <!-- 注册 -->
+                    <div class="m_t">
+                        <input type="text" value="注 册" id="submit" readonly>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 登录页面 -->
+        <div class="main_login">
+            <!-- 手机验证码和账号登录 -->
+            <div class="login_box" style="display: block;">
+                <h3>登录</h3>
+                <img src="../image/img_regist/saoman.png" class="img_scan" alt="" style="width:62px;height: 62px;">
+                <div class="wrap_300">
+                    <div class="youbiandianji youbiandianji_f">
+                        <a href="javascript:;" class="yanzhengma yanzhengma_f">
+                            手机验证码登录
+                        </a>
+                    </div>
+                    <div class="youbiandianji youbiandianji_l" style="display: none;">
+                        <a href="javascript:;" class="yanzhengma yanzhengma_l">
+                            其他登录方式
+                        </a>
+                    </div>
+
+                    <!-- 用户账号密码登录 -->
+                    <form  id="login" style="display: block;">
+                        <ul>
+                            <!-- 用户名 -->
+                            <li>
+                                <div class="login_in_user">
+                                    <input type="text" placeholder="用户名/手机号/邮箱" id="login_username">
+                                </div>
+                                <div class="pos_info">
+                                    <span class="iconfont icon-jiantouzuo">请输入用户名</span>
+                                </div>
+                            </li>
+                            <div class="border_bot"></div>
+                            <!-- 密码 -->
+                            <li>
+                                <div class="login_in_pwd">
+                                    <input type="password" placeholder="密码" id="login_password">
+                                </div>
+                                <a href="javascript:;" class="yanjing1"><span id="togglePassword1"
+                                    class="iconfont icon-biyan"></span></a>
+                                <div class="pos_info">
+                                    <span class="iconfont icon-jiantouzuo">请输入密码</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 协议 -->
+                        <div class="xieyi">
+                            <div class="xieyi_l">
+                                <input type="checkbox">
+                                <span>下次自动登录</span>
+                            </div>
+                            <div class="xieyi_r">
+                                <a href="">忘记密码</a>
+                            </div>
+                        </div>
+
+                        <!-- login_submit -->
+                        <div class="login_submit">
+                            <input type="submit" placeholder="登录" id="login_in_sub" >
+                        </div>
+
+                        <div class="kongbai" style="display: block;"></div>
+                        <!-- 下面其他网站 -->
+                        <div class="other_web other_web1" style="display: block;">
+                            <a href="javascript:;" class="wecheat">
+                                <span class="iconfont icon-weixin"></span>
+                                微信登录
+                            </a>
+                            <a href="javascript:;" class="qicq">
+                                <span class="iconfont icon-0052"></span>
+                                QQ登录
+                            </a>
+                            <a href="javascript:;" class="weibo">
+                                <span class="iconfont icon-weibo"></span>
+                                微博登录
+                            </a>
+                        </div>
+                    </form>
+
+                    <!-- 手机验证码登录 -->
+                    <form  id="login_ph">
+                        <div class="font_15">手机号未被注册，立即<a href="javascript:;">注册</a></div>
+                        <ul class="login_ph_list">
+                            <!-- 手机号 -->
+                            <li>
+                                <div class="login_phone">
+                                    <input type="text" placeholder="手机号" id="ph_y">
+                                </div>
+                                <div class="pos_info">
+                                    <span class="iconfont icon-jiantouzuo">请输入手机号</span>
+                                </div>
+                            </li>
+                            <div class="border_bot"></div>
+                            <!-- 验证码 -->
+                            <li>
+                                <div class="login_message">
+                                    <input type="text" placeholder="短信验证码" id="message_y">
+                                </div>
+                                <a href="javascript:;" class="sendIns sendInsy">获取验证码</a>
+                                <i style="display:none;"></i>
+                                <div class="pos_info">
+                                    <span class="iconfont icon-jiantouzuo">短信验证码错误</span>
+                                </div>
+                            </li>
+
+                            <div class="border_bot hide_border_bot" style="display: block;"></div>
+                            <li style="display: none;" class="dis_hide">
+                                <input type="password" placeholder="设置新密码" id="ph_password">
+                                <a href="javascript:;" class="yanjing2"><span id="togglePassword2" class="iconfont icon-biyan"></span></a>
+                                <div class="pos_info">
+                                    <span class="iconfont icon-jiantouzuo">请设置密码</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="mk_pwd">
+                            <a href="javascript:;" class="show_pass">设置新密码方便下次登录</a>
+                            <span class="iconfont icon-shuangxiajiantou"></span>
+                        </div>
+                        <div class="login_ph_sub">
+                            <input type="submit"  value="登录" id="login_ph_sub">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+            <!-- 扫码登录 -->
+            <div class="scan" style="display: none;">
+                <h3>扫码登录</h3>
+                <span class="sao_de">免输入 / 更快 / 更安全</span>
+                <img src="../image/img_regist/numbern.png" alt="" class="scan_img">
+                <div class="scan_content">
+                    <img src="../image/img_regist/show.png" alt="">
+                    <span>请用最新版<a href="">孔网客户端</a>扫描</span>
+                </div>
+
+                <div style="width: 300px;height: 1px;margin-top:30px;border-top:1px solid #ccc"></div>
+
+                <div class="other_web other_web2" style="display: block;">
+                    <a href="javascript:;" class="wecheat">
+                        <span class="iconfont icon-weixin"></span>
+                        微信登录
+                    </a>
+                    <a href="javascript:;" class="qicq">
+                        <span class="iconfont icon-0052"></span>
+                        QQ登录
+                    </a>
+                    <a href="javascript:;" class="weibo">
+                        <span class="iconfont icon-weibo"></span>
+                        微博登录
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 右边 -->
+        <div class="right_box right_box1 right_box_hide">
+            <!-- 点击切换登录与注册 -->
+            <div class="info_box ">
+                <span class="have_code">已有孔网账号</span>
+                <a href="javascript:;" class="to_login_in to_login_in1">快速登录</a>
+            </div>
+        </div>
+
+        <div class="right_box right_box2">
+            <div class="info_box">
+                <span class="have_code">还没有孔网帐号？</span>
+                <a href="javascript:;" class="to_login_in to_login_in2">快速注册</a>
+            </div>
+        </div>
+
+        <div style="height: 30px;"></div>
+    </main>
+
+
+    <!-- 尾部 -->
+    <footer>
+        <div class="footer">
+            <div class="footer_left">
+                © 2002-2017 Kongfz.com 孔夫子旧书网 版权所有
+            </div>
+            <div class="footer_right">
+                <a href="javascript:;">关于孔网</a>
+                <a href="javascript:;">联系我们</a>
+                <a href="javascript:;">帮助中心</a>
+                <a href="javascript:;">版权隐私</a>
+                <a href="javascript:;">广告业务</a>
+                <a href="javascript:;">工作机会</a>
+                <a href="javascript:;">移动版</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/login_regist.js"></script>
+
+</html>
