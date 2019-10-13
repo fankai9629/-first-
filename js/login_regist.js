@@ -1,6 +1,12 @@
 // 点击右边切换注册登录
 
 // 点击注册,登录消失
+window.onload=function(){
+    if(getCookie('lo_re')&&getCookie('lo_re')==0){
+        $('.to_login_in2').click();
+    }
+}
+
 $('.to_login_in2').click(function () {
     $('.right_box2').addClass('right_box_hide');
     $('.right_box1').removeClass('right_box_hide');
@@ -400,7 +406,7 @@ $('#login_in_sub').click(function () {
                 if (mess.status == 'ok') {
                     ajax('post', '../server/login_user_name.php', data, function (b) {
                         var mess_name = JSON.parse(b);
-                        setCookie('username', 'mess_name.username', 7);
+                        setCookie('username', mess_name.username, 7);
                         alert('登录成功正在跳转首页');
                         window.location.href = "./index.html";
                     })
@@ -462,6 +468,7 @@ $('#ph_y').keyup(function () {
                 $('.font_15').css('display', 'block');
             } else {
                 $('.font_15').css('display', 'none'); //手机号可以登录
+                 $('.special').html($('#ph_y').val()); //把正确的号码导入   
                 $('.sendInsy').click(function () { //获取验证码
                     clearInterval(timer);
                     // 验证码
@@ -519,13 +526,21 @@ $('#ph_y').blur(function () {
         $('.pos_info').eq(9).find('span').html('请输入正确的手机号');
 
     }else{
-        
+        $('.pos_info').eq(9).css('display', 'none');
     }
 })
 
 //手机验证码登录按钮
     $('#login_ph_sub').click(function(){
+        //当值正确 转换
+        var data = "phone="+$('#ph_y').val();
+        ajax('post','../server/login_phone.php',data,function(a){
+            var b = JSON.parse(a);
+            setCookie('username',b.username,7);
+            alert('登录成功,正在登录...');
+            window.location.href="./index.html";
+        })
 
-        alert(1);
-        return  false;
+
+
     })
