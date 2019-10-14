@@ -192,6 +192,93 @@ $.ajax({
     type:"GET",
     dataType:"json",
     success:function(a){
-        console.log(a);
+        for(let i=0;i<a.fir.length;i++){
+            let b = a.fir[i].url;
+            let c = a.sec[i].ind;
+            let d = a.third[i].author;
+            let e = a.four[i].price;
+            let f = a.last[i].qi;
+          $('.good_bgc').eq(i).append("<img >");
+        $('.good_bgc').eq(i).find('img').attr("src",b);
+        $('.good_bgc').eq(i).next('a').html(c);
+        $('.book_author').eq(i).html(d);
+        $('.book_price').eq(i).html(e);
+        $('.qi').eq(i).html(f);
+    }
+    }
+})
+
+$.ajax({
+    url:"../2_json.json",
+    type:"GET",
+    dataType:"json",
+    success:function(a){
+        for(let i =0;i<a.f.length;i++){
+            let b = a.f[i].url;
+            let c = a.s[i].ind;
+            let d = a.t[i].des;
+           
+            let e = a.p[i].pp;
+            let f = a.p_by[i].by;
+            let g = a.qg[i].qgl;
+            $('.newSquare_box_con').append($("<span class='item'></span>"));
+            $('.item').eq(i).append($("<div class='item_img'></div>")) //添加上面部分
+            $('.item_img').eq(i).append("<img>");
+            $('.item_img').eq(i).find('img').attr("src",b); //图
+            
+            $('.item').eq(i).append($("<div class='item-con'></div>")); //标题
+            $('.item-con').eq(i).append("<div class='item-con-title'><a href='javascript:;'></a></div>") 
+            $('.item-con-title').eq(i).find('a').html(c); //介绍
+
+            
+
+            $('.item-con').eq(i).append("<div class='des'></div>")//描述
+            $('.des').eq(i).html(d); //描述
+
+            $('.item-con').eq(i).append("<div class='tag'></div>")//标签
+
+            $('.item-con').eq(i).append("<div class='item-bottom'></div>")//底部
+            $('.item-bottom').eq(i).append("<div class='item-bottom-zuoyou'></div><div class='qianggou'></div>")//左边+右边
+            $('.item-bottom-zuoyou').eq(i).append("<span class='jiage'></span><span class='by'></span>");
+            $('.jiage').eq(i).html(e); //价格
+            $('.by').eq(i).html(f); //包邮
+            $('.qianggou').eq(i).append("<div class='btn'></div>");
+            $('.btn').eq(i).html(g);  
+        }
+                for(let m = 0;m<a.four_1.length;m++){
+                let h = a.four_1[m].tag;
+                $('.tag').eq(0).append("<span></span>");
+                $('.tag').eq(0).find('span').eq(m).html(h);
+            }
+              for(let n = 0;n<a.four_2.length;n++){
+                let j = a.four_2[n].tag2;
+                $('.tag').eq(1).append("<span></span>");
+                $('.tag').eq(1).find('span').eq(n).html(j);
+            }
+            for(let o = 0;o<a.four_3.length;o++){
+                let k = a.four_3[o].tag3;
+                $('.tag').eq(2).append("<span></span>");
+                $('.tag').eq(2).find('span').eq(o).html(k);
+            }
+
+            for(let i=0;i<a.x.length;i++){
+                let r = a.x[i].url;
+                $('.three-column-con').append("<a href=''><img></a>");
+                $('.three-column-con').find("a").eq(i).find('img').attr("src",r)
+            }
+    }
+
+})
+$.ajax({
+    url:"../json.xlsm.json",
+    type:"GET",
+    dataType:"json",
+    success:function(a){
+        for(let i=0;i<3;i++){
+           $('body').append("<div class='index_shuji'></div>");
+           $('.index_shuji').eq(i).append("<div class='ancient_box'></div>");
+           $('.ancient_box').eq(i).append("<div class='ancient_title'></div><div class='ancient_left'></div><div class='ancient_right'></div>")
+           $('.ancient_title').eq() 
+        }
     }
 })

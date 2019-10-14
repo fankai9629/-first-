@@ -27,6 +27,13 @@
       "unicode_decimal": 58927
     },
     {
+      "icon_id": "975065",
+      "name": "方点",
+      "font_class": "fangdian",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
       "icon_id": "977581",
       "name": "qq",
       "font_class": "qq",
