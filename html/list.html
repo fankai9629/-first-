@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main_head.css">
+    <link rel="stylesheet" href="../css/list_com.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/iconfont/font_main/iconfont.css">
+    <script src="../js/cookie.js"></script>
+    <script src="../dist/jquery.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header style="background: #f7f7f6">
+
+        <div class="header"">
+                    <!-- 头部左边 -->
+                    <div class=" header_left">
+            <a href="javascript:;">首页</a>
+            <a href="javascript:;">书店区</a>
+            <a href="javascript:;">书摊区</a>
+            <a href="javascript:;">新书</a>
+            <a href="javascript:;">在线拍卖</a>
+            <a href="javascript:;">艺术品专场</a>
+        </div>
+
+        <div class="header_right">
+            <a href="javascript:;" class="login_show login_show_h">登录/注册
+                <div class="login_re">
+                    <p class="login_re_1 login_re_0">登录</p>
+                    <p class="login_re_1 login_re_2">免费注册</p>
+                    <div>
+                        <p class="login_re_s">其他方式</p>
+                        <div class="login_re_in">
+                            <span class="iconfont icon-weixin" style="color: green"></span>
+                            <p>微信</p>
+                        </div>
+                        <div class="login_re_in">
+                            <span class="iconfont icon-qq" style="color: blue"></span>
+                            <p>QQ</p>
+                        </div>
+                        <div class="login_re_in">
+                            <span class="iconfont icon-weibo" style="color: #8c222c"></span>
+                            <p>微博</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </a>
+            <div class="login_show_name" style="float: left;">欢迎 &nbsp;<a class="click_out" href="javascript:;"
+                    style="color: #8c222c;"></a></div>
+            <a href="javascript:;" class="header_xiahua">消息</a>
+            <a href="javascript:;" class="header_xiahua header_xiahua2"> <span style="color: #8c222c"
+                    class="iconfont icon-gouwuche"></span> 购物车</a>
+            <a href="javascript:;" class="header_xiahua">我的订单</a>
+            <a href="javascript:;" class="header_xiahua">个人中心
+                <div class="per_center">
+                    <div class="per_center_cen">
+                        <p><span class="iconfont icon-dianpu"></span>店铺</p>
+                        <hr>
+                        <p>我的订单</p>
+                        <p>收藏</p>
+
+                        <p><span class="iconfont icon-paimai"></span>拍卖</p>
+                        <p>拍卖交易</p>
+                        <p>我的竞拍</p>
+                        <p>收藏</p>
+                    </div>
+                    <hr>
+
+                    <p>我的好友</p>
+                    <p>资金账户</p>
+
+                </div>
+            </a>
+            <a href="javascript:;" class="kefu">客服
+                <div class="kefu_show">
+                    <p><span class="iconfont icon-icon_help"></span>帮助中心</p>
+                    <p><span class="iconfont icon-kefu"></span>在线留言</p>
+                </div>
+            </a>
+            <a href="javascript:;" class="header_xiahua header_xiahua1">手机版
+                <div class="header_xiahua1_hide">
+                   <img src="../image/img_regist/show.png" alt="">
+                    <p>iOS·android</p>
+                </div>
+            </a>
+            <span>|</span>
+            <a href="javascript:;" class="dizhi_b">
+                <span>送至</span><span class="dizhi">北京</span>
+                <div class="dizhi_hide dizhi_hide1">
+                    <p class="bc_c bc_cc">北京</p>
+                    <p class="bc_cc">上海</p>
+                    <p class="bc_cc">天津</p>
+                    <p class="bc_cc">南京</p>
+                    <p class="bc_cc">广东</p>
+                    <p class="bc_cc">深圳</p>
+                    <p class="bc_cc">杭州</p>
+                    <p class="bc_cc">成都</p>
+                </div>
+            </a>
+        </div>
+        </div>
+    </header>
+    <!-- 导航部分 -->
+    <nav>
+        <div class="nav">
+            <!-- 左边 -->
+            <div class="nav_left">
+                <a href="./index.html"><img src="../image/img_main/logo-250.png" alt=""></a>
+            </div>
+            <!-- 右边 -->
+            <div class="nav_right">
+
+                <div class="n_r_choice">
+                    <p class="n_r_choice_p1" style="color: #7b111b">商品</p>
+                    <p class="n_r_choice_p2">店铺</p>
+                    <p class="n_r_choice_p3">拍卖</p>
+                </div>
+                <p class="n_r_jiaobiao"></p>
+                <div class="search_i">
+                    <input type="text" class="search_inp" value="商品名称、作者、出版社、ISBN">
+                    <button>搜索</button>
+                    <p class="high_ser">高级搜索</p>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- tab开始 -->
+    <div class="header_box">
+        <div class="header_box_cont">
+            <div class="h_box_l">
+                <div class="h_box_title">
+                    <p>所有分类</p>
+                    <span class=""></span>
+                    <span class=""></span>
+                    <!-- 二级 -->
+                    <div class="h_box_hide"></div>
+                </div>
+                <div class="h_box_2">
+                    <span class="iconfont icon-youjiantou"></span>
+                    <span>图书</span>
+                    <span class="iconfont icon-youjiantou"></span>
+                    <span>小说</span>
+                </div>
+            </div>
+            <div class="h_box_r">
+                <p><a href="javascript:;">所有商品</a></p>
+                <p><a href="javascript:;">图书条目</a></p>
+                <p><a href="javascript:;">新书</a></p>
+                <p><a href="javascript:;">在线拍卖</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 搜索部分 -->
+    <div class="search_main">
+        <div class="filtor_box">
+            <div class="filtor_item">
+                <p>子类筛选:</p>
+                <a href="javascript:;">中国古典小说</a>
+                <a href="javascript:;">中国现在代小说</a>
+                <a href="javascript:;">中国当代小说</a>
+                <a href="javascript:;">四大名著</a>
+                <a href="javascript:;">外国小说</a>
+                <a href="javascript:;">科幻</a>
+                <a href="javascript:;">穿越</a>
+                <a href="javascript:;">重生/侦探</a>
+                <a href="javascript:;">历史</a>
+                <a href="javascript:;">职场</a>
+                <a href="javascript:;">官场</a>
+                <a href="javascript:;">社会</a>
+                <a href="javascript:;">武侠</a>
+                <a href="javascript:;">情感</a>
+                <a href="javascript:;">悬疑/惊悚/恐怖</a>
+                <a href="javascript:;">推理</a>
+                <a href="javascript:;">魔幻</a>
+                <a href="javascript:;">奇幻/玄幻</a>
+            </div>
+            <div class="filtor_item">
+                <p>筛选</p>
+                <span>出版时间</span>
+                <a href="javascript:;">最近30天</a>
+                <a href="javascript:;">最近一年</a>
+                <a href="javascript:;">2010年至今</a>
+                <a href="javascript:;">2000年代</a>
+                <a href="javascript:;">90年代</a>
+                <a href="javascript:;">改革开放与80年代</a>
+                <a href="javascript:;">文化大革命</a>
+                <a href="javascript:;">反右大跃进人民公社</a>
+            </div>
+            <div class="filtor_item">
+                <span>品相</span>
+                <a href="javascript:;">有旧书在售</a>
+                <a href="javascript:;">有新书在售</a>
+            </div>
+            <div class="filtor_item">
+                <span>装帧</span>
+                <a href="JavaScript:;">平装</a>
+                <a href="JavaScript:;">精装</a>
+                <a href="JavaScript:;">软精装</a>
+                <a href="JavaScript:;">锁线精装</a>
+                <a href="JavaScript:;">其他</a>
+            </div>
+            <div class="filtor_item">
+                <span>作者</span>
+                <a href="javascript:;">莫言</a>
+                <a href="javascript:;">鲁迅</a>
+                <a href="javascript:;">老舍</a>
+                <a href="javascript:;">贾平凹</a>
+                <a href="javascript:;">王小波</a>
+                <a href="javascript:;">海岩</a>
+                <a href="javascript:;">高阳</a>
+                <a href="javascript:;">钱钟书</a> 
+            </div>
+            <div class="filtor_item">
+                <span>出版社</span>
+                <a href="javascript:;">人民文学出版社</a>
+                <a href="javascript:;">作家出版社</a>
+                <a href="javascript:;">上海译文出版社</a>
+                <a href="javascript:;">译林出版社 </a>
+                <a href="javascript:;">上海文艺出版社</a>
+                <a href="javascript:;">长江文艺出版社</a>
+                <a href="javascript:;">新星出版社 </a>
+                <a href="javascript:;">江苏文艺出版社 </a>
+                <a href="javascript:;">重庆出版社 </a>
+            </div>
+        </div>
+        <div class="result_box">
+            <div class="result_top">
+                <div class="order_box">
+                    <a href="javascript:;" class="res_item res_hv res_hv1">
+                        <span class="text">综合</span>
+                    </a>
+                    <a href="javascript:;" class="res_item res_hv res_hv2">
+                        <span class="text">人气</span>
+                    </a>
+                    <a href="javascript:;" class="res_item res_hv res_hv3">
+                        <span class="text">豆瓣评分</span>
+                    </a>
+                    <a href="javascript:;" class="res_item xiala res_hv">
+                        <span class="text">出版时间</span>
+                        <span class="iconfont icon-arrow-up-"></span>
+                        <span  class="iconfont icon-arrow-up-1 icon-arrow-up-"></span>
+                        <span class="iconfont icon-arrow-down-"></span>
+                    </a>
+                    <a href="javascript:;" class="res_item filter-status ">
+                        <span class="iconfont icon-gouxuankuang"></span>
+                        <span class="iconfont icon-xuankuang_selected"></span>
+                        <span class="text">仅显示在售图书</span>
+                    </a>
+                </div>
+            </div>
+                <!-- 内容框 -->
+            <div class="result_main">
+                    <!-- 内容 -->
+                    <div class="listBox">
+                      
+                    </div>
+            </div>
+        </div>
+        <!-- 右边空部分 -->
+        <div class="search_adv">
+            <div class="adv_img">
+                <a target="_blank" href="https://d.mytanwan.com/h/20834.html?cplaceid=85020758.3087689968.80398217506"><span>关闭</span><img src="../image/img_list/timg.gif" alt=""></a>
+                <div class="guanbi"><img src="../image/img_list/gb.jpg" alt=""></div>    
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src='../js/list.js'></script>
+<script src="../js/list_com.js"></script>
+</html>

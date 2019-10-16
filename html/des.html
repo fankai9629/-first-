@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../js/cookie.js"></script>
+    <script src="../dist/jquery.js"></script>
+    <link rel="stylesheet" href="../css/des_com.css">
+    <link rel="stylesheet" href="../css/des.css">
+    <link rel="stylesheet" href="../css/common_css/li_ul_a.css">
+    <link rel="stylesheet" href="../css/iconfont/font_main/iconfont.css">
+    <link rel="stylesheet" href="../css/iconfont/font_des/iconfont.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header style="background: #f7f7f6">
+
+        <div class="header"">
+                            <!-- 头部左边 -->
+                            <div class=" header_left">
+            <a href="javascript:;">首页</a>
+            <a href="javascript:;">书店区</a>
+            <a href="javascript:;">书摊区</a>
+            <a href="javascript:;">新书</a>
+            <a href="javascript:;">在线拍卖</a>
+            <a href="javascript:;">艺术品专场</a>
+        </div>
+
+        <div class="header_right">
+            <a href="javascript:;" class="login_show login_show_h">登录/注册
+                <div class="login_re">
+                    <p class="login_re_1 login_re_0">登录</p>
+                    <p class="login_re_1 login_re_2">免费注册</p>
+                    <div>
+                        <p class="login_re_s">其他方式</p>
+                        <div class="login_re_in">
+                            <span class="iconfont icon-weixin" style="color: green"></span>
+                            <p>微信</p>
+                        </div>
+                        <div class="login_re_in">
+                            <span class="iconfont icon-qq" style="color: blue"></span>
+                            <p>QQ</p>
+                        </div>
+                        <div class="login_re_in">
+                            <span class="iconfont icon-weibo" style="color: #8c222c"></span>
+                            <p>微博</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </a>
+            <div class="login_show_name" style="float: left;">欢迎 &nbsp;<a class="click_out" href="javascript:;"
+                    style="color: #8c222c;"></a></div>
+            <a href="javascript:;" class="header_xiahua">消息</a>
+            <a href="javascript:;" class="header_xiahua header_xiahua2"> <span style="color: #8c222c"
+                    class="iconfont icon-gouwuche"></span> 购物车</a>
+            <a href="javascript:;" class="header_xiahua">我的订单</a>
+            <a href="javascript:;" class="header_xiahua">个人中心
+                <div class="per_center">
+                    <div class="per_center_cen">
+                        <p><span class="iconfont icon-dianpu"></span>店铺</p>
+                        <hr>
+                        <p>我的订单</p>
+                        <p>收藏</p>
+
+                        <p><span class="iconfont icon-paimai"></span>拍卖</p>
+                        <p>拍卖交易</p>
+                        <p>我的竞拍</p>
+                        <p>收藏</p>
+                    </div>
+                    <hr>
+
+                    <p>我的好友</p>
+                    <p>资金账户</p>
+
+                </div>
+            </a>
+            <a href="javascript:;" class="kefu">客服
+                <div class="kefu_show">
+                    <p><span class="iconfont icon-icon_help"></span>帮助中心</p>
+                    <p><span class="iconfont icon-kefu"></span>在线留言</p>
+                </div>
+            </a>
+            <a href="javascript:;" class="header_xiahua header_xiahua1">手机版
+                <div class="header_xiahua1_hide">
+                    <img src="../image/img_regist/show.png" alt="">
+                    <p>iOS·android</p>
+                </div>
+            </a>
+            <span>|</span>
+            <a href="javascript:;" class="dizhi_b">
+                <span>送至</span><span class="dizhi">北京</span>
+                <div class="dizhi_hide dizhi_hide1">
+                    <p class="bc_c bc_cc">北京</p>
+                    <p class="bc_cc">上海</p>
+                    <p class="bc_cc">天津</p>
+                    <p class="bc_cc">南京</p>
+                    <p class="bc_cc">广东</p>
+                    <p class="bc_cc">深圳</p>
+                    <p class="bc_cc">杭州</p>
+                    <p class="bc_cc">成都</p>
+                </div>
+            </a>
+        </div>
+        </div>
+    </header>
+    <!-- 导航部分 -->
+    <nav>
+        <div class="nav">
+            <!-- 左边 -->
+            <div class="nav_left">
+                <a href="./index.html"><img src="../image/img_main/logo-250.png" alt=""></a>
+            </div>
+            <!-- 右边 -->
+            <div class="nav_right">
+
+                <div class="n_r_choice">
+                    <p class="n_r_choice_p1" style="color: #7b111b">商品</p>
+                    <p class="n_r_choice_p2">店铺</p>
+                    <p class="n_r_choice_p3">拍卖</p>
+                </div>
+                <p class="n_r_jiaobiao"></p>
+                <div class="search_i">
+                    <input type="text" class="search_inp" value="商品名称、作者、出版社、ISBN">
+                    <button>搜索</button>
+                    <p class="high_ser">高级搜索</p>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- 头部 -->
+    <div class="shop_top_title">
+        <div>
+            <p>子薇书店</p>
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div class="nav_top_box">
+        <div class="nav_top_cont">
+            <div class="nav_top_left">
+                <div class="nav_main_f">
+                    商品分类
+                    <div class="nav_main_s">
+                        <div class="nav_main_s_cont">
+                            <ul class="nav_sec_title">
+                                <li class="nav_title_cont">孔网分类</li>
+                            </ul>
+                            <ul class="nav_sec_cont">
+                                <li class="sec_cont">
+                                    <h3>图书</h3>
+                                    <div class="sec_cont_word">
+                                        <a href="javascript:;">文学</a>
+                                        <a href="javascript:;">社会文学</a>
+                                        <a href="javascript:;">法国</a>
+                                        <a href="javascript:;">哲学</a>
+                                        <a href="javascript:;">经济</a>
+                                        <a href="javascript:;">艺术</a>
+                                        <a href="javascript:;">小说</a>
+                                        <a href="javascript:;">管理</a>
+                                        <a href="javascript:;">生活</a>
+                                        <a href="javascript:;">工程技术</a>
+                                        <a href="javascript:;">政治</a>
+                                        <a href="javascript:;">教材</a>
+                                        <a href="javascript:;">体育</a>
+                                        <a href="javascript:;">教育</a>
+                                        <a href="javascript:;">古籍</a>
+                                        <a href="javascript:;">国学</a>
+                                        <a href="javascript:;">自然科学</a>
+                                        <a href="javascript:;">语言</a>
+                                        <a href="javascript:;">法律</a>
+                                        <a href="javascript:;">军事</a>
+                                        <a href="javascript:;">综合</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;">店铺首页</a>
+                <a href="javascript:;">全部商品</a>
+                <a href="javascript:;">最新上架</a>
+                <a href="javascript:;">店主推荐</a>
+                <a href="javascript:;">珍本图书</a>
+                <a href="javascript:;">优惠特价</a>
+            </div>
+            <div class="nav_top_right">
+                <a href="javascript:;">
+                    <i class="iconfont icon-erweima"></i>
+                    <span>微信逛本店</span>
+                    <div>
+                        <img src="../image/img_des/208082.png" alt="">
+                    </div>
+                </a>
+                <a href="javascript:;">
+                    <i class="iconfont icon-iconfontshoucang"></i>
+                    <span>收藏本店</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+
+    <div class="main_content">
+
+        <!-- 上部分 -->
+        <div class="main_top">
+            <!-- 左边 -->
+            <div class="major">
+                <!-- 图片部分 -->
+                <div class="marjor_img">
+                    <ul class="marjor_bg">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../image/img_des/12.jpg" alt="">
+                            </a>
+                        </li>
+                        <span class="xiaotudian"></span>
+
+                    </ul>
+                    <div class="marjor_img_hide">
+                        <a href="JavaScript:;">
+                            <img src="../image/img_des/12.jpg" class="img_hide" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 文字部分 -->
+                <div class="marjor_cont">
+                    <!-- 基本信息 -->
+                    <div class="marjor_info">
+                        <p class="info_ti">关键对话</p>
+                        <div class="info_ind">正版新书\关键对话 \机械工业出版社</div>
+                        <!-- 详细介绍 -->
+                        <div class="info_detail">
+                            <ul>
+                                <li>作者: 毕崇毅 译</li>
+                                <li>出版时间: 2017-05</li>
+                                <li>开本: 16开</li>
+                                <li>出版社: 机械工业出版社</li>
+                                <li>版次: 1</li>
+                                <li>纸张: 纯质纸</li>
+                                <li>ISBN: 9787111564942</li>
+                                <li>装帧: 平装</li>
+                                <li>页数: 236页</li>
+                            </ul>
+                        </div>
+                        <!-- 价格介绍 -->
+                        <div class="price_intro">
+                            <div class="price_intro_img">
+                                <img src="../image/img_des/new.png" alt="">
+                            </div>
+                            <p class="price_detai1">
+                                <span>售价</span>
+                                <span>￥19.8<i>4.4折</i></span>
+                            </p>
+                            <p class="price_detai2">
+                                <span>定价</span>
+                                <span><del>￥45.00</del></span>
+                            </p>
+                            <p class="price_detai3">
+                                <span>品相</span>
+                                <span><i>全新</i>品相描述</span>
+                            </p>
+                        </div>
+                        <!-- 送至 -->
+                        <div class="songzhi">
+                            送至：
+                            <span class="songzhi_yiji">
+                                <span class="sz_priv">北京市</span>
+                                <span class="sz_city">东城区</span>
+                            </span>
+                            <span class="songzhi_jiage">快递费：8元</span>
+                            <!-- 选项卡 -->
+                            <div class="hide_tap">
+                                <!-- 省市开头 -->
+
+                                <!-- 内容 -->
+                                <div class="hide_tap_cont">
+                                    <p>
+                                        <span class="tap_title">北京市</span>
+                                        <span class="tap_content">东城区</span>
+                                    </p>
+
+                                    <div class="hide_tap_priv">
+                                        <a href="javascript:;" class="hide_tap_pp">北京市</a>
+                                        <a href="javascript:;" class="hide_tap_pp">上海市</a>
+                                        <a href=" javascript:;" class="hide_tap_pp">重庆市</a>
+                                    </div>
+                                    <!-- 城市 -->
+                                    <div class="hide_tap_c">
+                                        <div class="tap_city_cont">
+                                            <a href="javascript:;">东城区</a>
+                                            <a href="javascript:;">西单区</a>
+                                            <a href="javascript:;">海淀区</a>
+                                            <a href="javascript:;">朝阳区</a>
+                                            <a href="javascript:;">密云区</a>
+                                            <a href="javascript:;">昌平区</a>
+                                        </div>
+                                        <div class="tap_city_cont">
+                                            <a href="javascript:;">松江区</a>
+                                            <a href="javascript:;">徐汇区</a>
+                                            <a href="javascript:;">嘉定区</a>
+                                            <a href="javascript:;">闵行区</a>
+                                            <a href="javascript:;">奉贤区</a>
+                                            <a href="javascript:;">浦东区</a>
+                                        </div>
+                                        <div class="tap_city_cont">
+                                            <a href="javascript:;">巴南区</a>
+                                            <a href="javascript:;">北坝区</a>
+                                            <a href="javascript:;">长寿区</a>
+                                            <a href="javascript:;">大渡口区</a>
+                                            <a href="javascript:;">江北区</a>
+                                            <a href="javascript:;">合川区</a>
+                                        </div>
+                                    </div>
+                                    <!-- 价格 -->
+                                    <div class="hide_jiage" style="display: none">
+                                        <span class="hide_exp">快递费：8元</span>
+                                        <span class="hide_exp">快递费：12元</span>
+                                        <span class="hide_exp">快递费：16元</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 购物 -->
+                        <div class="gouwu">
+                            <dl>
+                                <dt>数量</dt>
+                                <dd>
+                                    <div class="gouwu_shuliang">
+                                        <span class="gouwu_1">
+                                            <i class="iconfont icon-jian"></i>
+                                        </span>
+                                        <input type="text" class="gouwu_2" value="1">
+                                        <span class="gouwu_3">
+                                            <i class="iconfont icon-jia"></i>
+                                        </span>
+                                    </div>
+                                    <div class="jishu">
+                                        库存
+                                        <i class="store_count">6</i>
+                                        件
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- 添加购物车 -->
+                        <div class="buy-group">
+                                <!-- 左边 -->
+                                <div class="buy-group-left">
+                                    <div class="buy-left_1">
+                                        <a href="javascript:;">立即购买</a>
+                                    </div>
+                                    <div class="buy-left_2">
+                                        <a href="javascript:;">
+                                            <i class="iconfont icon-gouwuche"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 右边 -->
+                                <div class="buy-group-right">
+                                    <div  class="fenxiang">
+                                        <i class="iconfont icon-fenxiang"></i>
+                                        分享
+                                        <div class="buy-group-hide">
+                                                <a class="iconfont icon-weixin" title="微信" style="color: #77ab77"></a>
+                                                <a class="iconfont icon-weibo" title="微博" style="color:#ba5c65"></a>
+                                                <a class="iconfont icon-douban" title="豆瓣" style="color: #77ab77"></a>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" class="shou_cang">
+                                        <i class="iconfont icon-iconfontshoucang"></i>
+                                        收藏
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 右边 -->
+        <div class="store_func">
+            <div class="store_ins">
+                    <!-- 内容 -->
+                <div class="store_ins_t">
+                    <div class="store_content">
+                        <div class="store_cross_line"></div>
+                        <div class="store_img">
+                            <img src="../image/img_des/shopYears@03.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 子微书店 -->
+                    <div class="store_content">
+                        <p class="store_title">子微书店</p>
+                        <p>
+                            <span>店铺等级</span> 
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                        </p>
+                        <p>
+                            <span>资质证明</span>
+                            <i class="iconfont icon-icon-test"></i>
+                            <i class="iconfont icon-medal"></i>
+                        </p>
+                    </div>
+                    <!-- 店铺等级 -->
+                    <div class="store_dianpu">
+                        <div>
+                            <p class="store_dianpu_t">90天平均完成</p>
+                            <p>成功完成<span>70.9%</span>(24笔)</p>
+                            <p>好评率<span>99.82%</span></p>
+                            <p>发货时间<span>17.89小时</span></p>
+                        </div>
+                    </div>
+                    <!-- 联系店主 -->
+                    <div class="store_content lianxidianzhu">
+                        <p>店主<a href="javascript:;">子微店主</a></p>
+                        <p>联系<a href="javascript:;">在线交谈</a></p>
+                        <p>地址<span>北京朝阳区</span></p>
+                        <div>
+                            <a href="javascript:;">进店逛逛</a>
+                            <a href="javascript:;">收藏店铺</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 下部分 -->
+    <div class="main_bottom">
+            <!-- 左边 -->
+        <div class="main_bot_lf">
+            <!-- 头部 -->
+            <div class="bot_left_sear">
+                <div>
+                    <input type="text" placeholder="搜本店">
+                    <i class="iconfont icon-search"></i>
+                </div>
+            
+            
+            </div>
+            <!-- 左边内容 -->
+            <div class="bot_left_cont">
+                <div class="left_cont_title">孔网分类</div>
+                <div class="left_fenlei">
+                    <p>图书</p>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">文学(2409)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">社会文化(1502)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">历史(1370)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">教材教辅(1070)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">经济(400)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">童书(349)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">艺术(1023)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">小说(2034)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">管理(686)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">政治(453)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">哲学心理学(123)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">国学国籍(551)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">计算机与网络(234)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">军事(412)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">法律(892)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 右边 -->
+        <div class="main_bot_rh">
+            <!-- 头部 -->
+            <div class="main_bot_rh_t">
+                <ul>
+                    <li class="main_bot_t1"><a href="javascript:;">商品详情</a></li>
+                    <li class="main_bot_t2"><a href="javascript:;">店铺评价</a></li>
+                </ul>
+            </div>
+            <!-- 内容部分 -->
+            <div class="main_bot_rh_cont">
+                <!-- 展示 -->
+                <div class="rh_cont_pic" >
+                    <p>商品分类：生活</p>
+                    <p>货号：DkkY219</p>
+                    <p>品相描述：全新</p>
+                    <p>正版新书，欢迎惠顾</p>
+                    <div>
+                        <a href="javascript:;"><img src="../image/img_des/p4YBAFqYt2WAfBu9AAFY2ggtiYc881_b.jpg" alt="" onclick="window.open(this.src)"></a>
+                    </div>
+                </div>
+                    <!-- 评论 -->
+                <div class="rh_cont_comments">
+                    <!-- 标题 -->
+                    <div class="rh_cont_title">
+                        <ul class="rh_cont_ul">
+                            <li>
+                                <div>
+                                    <i class="iconquan iconfont icon-yuanxuankuang1"></i>
+                                    <i></i>
+                                </div>
+                                全部98
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="iconquan iconfont icon-yuanxuankuang1"></i>
+                                    <i></i>
+                                </div>
+                                好评97
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="iconquan iconfont icon-yuanxuankuang1"></i>
+                                    <i></i>
+                                </div>
+                                中评
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="iconquan iconfont icon-yuanxuankuang1"></i>
+                                    <i></i>
+                                </div>
+                                差评
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 内容 -->
+                    <div class="rh_cont_cont">
+                        <div>
+                            <ul>
+                                    <li>Word/Excel/PPT三合一办公技巧</li>
+                                    <li><span class="iconfont icon-huahui"></span></li>
+                            </ul>
+                            <ul>
+                                <li>好评!</li>
+                                <li>2019.09.01</li>
+                            </ul>
+                            <ul>
+                                <li>书***2</li>
+                            </ul>
+                        </div>
+                        <div>
+                                <ul>
+                                        <li>史记（白话本）（上下册）</li>
+                                        <li><span class="iconfont icon-huahui"></span></li>
+                                </ul>
+                                <ul>
+                                    <li>差评!</li>
+                                    <li>2019.08.05</li>
+                                </ul>
+                                <ul>
+                                    <li>民***额</li>
+                                </ul>
+                            </div>
+                            <div>
+                                    <ul>
+                                            <li>镜头前的旧中国：约翰·汤姆森游记</li>
+                                            <li><span class="iconfont icon-huahui"></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li>好评!</li>
+                                        <li>2019.03.09</li>
+                                    </ul>
+                                    <ul>
+                                        <li>去***的</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                        <ul>
+                                            <li>清末民初文献丛刊 求阙斋日记类钞</li>
+                                            <li><span class="iconfont icon-huahui"></span></li>
+                                        </ul>
+                                        <ul>
+                                            <li>好评!</li>
+                                            <li>2019.05.11</li>
+                                        </ul>
+                                        <ul>
+                                            <li>载***4</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                            <ul>
+                                                    <li>Python学习手册（原书第5版）</li>
+                                                    <li><span class="iconfont icon-huahui"></span></li>
+                                            </ul>
+                                            <ul>
+                                                <li>好评!</li>
+                                                <li>2019.01.20</li>
+                                            </ul>
+                                            <ul>
+                                                <li>法***人</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                                <ul>
+                                                    <li>动物疫病防治员（修订版）</li>
+                                                    <li><span class="iconfont icon-huahui"></span></li>
+                                                </ul>
+                                                <ul>
+                                                    <li>好评!</li>
+                                                    <li>2019.04.20</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>呢***f</li>
+                                                </ul>
+                                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="guding">
+        <a href="./gouwuche.html">
+            <i class="iconfont icon-gouwuche"></i>
+        </a>
+    <span class="gouwu_word">1</span>
+    </div>
+    <footer>
+        <div class="footer">
+        <div class="footer_l">
+            <p>© 2002-2019 Kongfz.com 孔夫子旧书网 版权所有</p>
+        </div>
+        <div class="footer_r">
+            <a href="javascript:;">关于孔网</a>
+            <a href="javascript:;">联系我们</a>
+            <a href="javascript:;">帮助中心</a>
+            <a href="javascript:;">版权隐私</a>
+            <a href="javascript:;">广告业务</a>
+            <a href="javascript:;">工作机会</a>
+            <a href="javascript:;">移动版</a>
+            <a href="javascript:;">图书目录</a>
+            <a href="javascript:;">图书标签</a>
+        </div>
+    </div>
+    </footer>
+</body>
+<script src="../js/list_com.js"></script>
+<script src="../js/des.js"></script>
+
+</html>

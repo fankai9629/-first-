@@ -1,5 +1,7 @@
 // 判断cookie
 window.onload = function () {
+    setCookie('hei','',0);
+
     if (getCookie('username')) {
         var m = getCookie('username');
         $('.login_show_h').css('display', 'none');
@@ -188,7 +190,7 @@ $('.banner_box_bg').mouseleave(function(){
 
 // 请求json文件
 $.ajax({
-    url:"../1_json.json",
+    url:"../json/1_json.json",
     type:"GET",
     dataType:"json",
     success:function(a){
@@ -209,7 +211,7 @@ $.ajax({
 })
 
 $.ajax({
-    url:"../2_json.json",
+    url:"../json/2_json.json",
     type:"GET",
     dataType:"json",
     success:function(a){
@@ -266,19 +268,257 @@ $.ajax({
                 $('.three-column-con').append("<a href=''><img></a>");
                 $('.three-column-con').find("a").eq(i).find('img').attr("src",r)
             }
+            $('.three-column-con').find("a").eq(2).css('margin-right',0)
     }
 
 })
-$.ajax({
-    url:"../json.xlsm.json",
+
+// $(function(){
+//     var scrollTop = $(this).scrollTop();
+//         var scrollHeight = $(document).height();
+//         var windowHeight = $(this).height();
+//         if (scrollTop + windowHeight >= scrollHeight) {
+//             $('.pm_company').prepend("<div class='jiazai'><img></div>");
+//             setTimeout(function(){
+//                 $('.jiazai').css('display','none');
+//                 fn1();
+//             },3000);
+//         }
+// })
+
+$(window).scroll(function(){
+    var scrollTop = $(this).scrollTop();
+    var scrollHeight = $(document).height();
+    var windowHeight = $(this).height();
+    var hei = getCookie('hei');
+    if (scrollTop + windowHeight >= scrollHeight && hei=="") {
+        setCookie('hei',1,0.054);
+        $('.pm_company').prepend("<div class='jiazai'><img></div>");
+        setTimeout(function(){
+            $('.jiazai').css('display','none');
+            fn1();
+        },3000);
+    }
+})
+
+function fn1(){ $.ajax({
+    url:"../json/json.xlsm.json",
     type:"GET",
     dataType:"json",
     success:function(a){
-        for(let i=0;i<3;i++){
-           $('body').append("<div class='index_shuji'></div>");
+        for(var i=0;i<3;i++){
+            let b = a.contents[0]; //标题
+            let c = a.contents[1];// 标题后面小标题
+            let d = a.contents[2];// 主体标题
+
+            let e1 = a.contents[3];// 1-1
+            let f1 = a.contents[4];//1-2
+            let g1 = a.contents[5];//1-3
+            let h1 = a.contents[6];//1-4
+            
+            let e2 = a.contents[7];// 2-1
+            let f2 = a.contents[8];//2-2
+            let g2 = a.contents[9];//2-3
+            let h2 = a.contents[10];//2-4
+
+            let e3 = a.contents[11];//3-1
+            let f3 = a.contents[12];//3-2
+            let g3 = a.contents[13];//3-3
+            let h3 = a.contents[14];//3-4
+
+          
+
+            let e4 = a.contents[15];// 4-1
+            let f4 = a.contents[16];// 4-2
+            let g4 = a.contents[17];// 4-3
+            let h4 = a.contents[18];// 4-4
+
+            let e5 = a.contents[19];// 5-1
+            let f5 = a.contents[20];// 5-2
+            let g5 = a.contents[21];// 5-3
+            let h5 = a.contents[22];// 5-4
+
+            let e6 = a.contents[23];// 6-1
+            let f6 = a.contents[24];// 6-2
+            let g6 = a.contents[25];// 6-3
+            let h6 = a.contents[26];// 6-4
+
+            let e7 = a.contents[27];// 7-1
+            let f7 = a.contents[28];// 7-2
+            let g7 = a.contents[29];// 7-3
+            let h7 = a.contents[30];// 7-4
+
+            let e8 = a.contents[31];// 8-1
+            let f8 = a.contents[32];// 8-2
+            let g8 = a.contents[33];// 8-3
+            let h8 = a.contents[34];// 8-4
+
+            let e9 = a.contents[35];// 9-1
+            let f9 = a.contents[36];// 9-2
+            let g9 = a.contents[37];// 9-3
+            let h9 = a.contents[38];// 9-4
+
+            let e10 = a.contents[39];// 10-1
+            let f10 = a.contents[40];// 10-2
+            let g10 = a.contents[41];// 10-3
+            let h10 = a.contents[42];// 10-4
+
+            let j1 = a.contents[43];
+
+            let j2 = a.contents[44];
+            let j3 = a.contents[45];
+
+            let j4 = a.contents[46];
+            let j5 = a.contents[47];
+
+            let j6 = a.contents[48];
+            let j7 = a.contents[49];
+
+            let j8 = a.contents[50];
+            let j9 = a.contents[51];
+
+            let i1 = a.contents[52];
+            let i2 = a.contents[53];
+
+            let i3 = a.contents[54];
+            let i4 = a.contents[55];
+
+            let i5 = a.contents[56];
+            let i6 = a.contents[57];
+
+            let i7 = a.contents[58];
+            let i8 = a.contents[59];
+
+
+            $('.bg_f7').append("<div class='index_shuji'></div>");
            $('.index_shuji').eq(i).append("<div class='ancient_box'></div>");
            $('.ancient_box').eq(i).append("<div class='ancient_title'></div><div class='ancient_left'></div><div class='ancient_right'></div>")
-           $('.ancient_title').eq() 
+           $('.ancient_title').eq(i).append("<div class='floor_big'></div>");
+           $('.floor_big').eq(i).append(("<ul class='floor_list'></ul>"));
+            $('.floor_list').eq(i).append("<span class='floor_title_name'></span><li><a href='javascript:;'></a></li>");
+            $('.floor_title_name').eq(i).html(b[i]);
+            $('.floor_list').eq(i).find('li').find('a').html(c[i]);
+            $('.ancient_left').eq(i).append("<div class='left_main_list'><p class='left_main_title'><span></span></p></div>")
+            $('.left_main_title').eq(i).find('span').html(d[i]);
+
+            $('.left_main_list').eq(i).append("<div class='left_main_cont'></div>")
+            for(let x =0;x<10;x++){
+                $('.left_main_cont').eq(i).append("<span class='shop_item'></span>");
+            
+                $('.left_main_cont').eq(i).find('span').eq(x).append("<a href='javascript:;' class='book_list_img'></a>");
+                $('.left_main_cont').eq(i).find('span').eq(x).append("<a href='javascript:;' class='book_list_pro'></a>");
+                $('.left_main_cont').eq(i).find('span').eq(x).append("<a href='javascript:;' class='book_list_time'></a>");
+                $('.left_main_cont').eq(i).find('span').eq(x).append("<p class='pro_price'><i class='pro_price_re_br'></i></p>")
+                $('.left_main_cont').eq(i).find('.book_list_img').eq(x).append("<img>");
+                $('.left_main_cont').eq(i).find('.book_list_img').eq(0).find('img').attr("src",e1[i]);
+                $('.left_main_cont').eq(i).find('.book_list_pro').eq(0).html(f1[i]);
+                $('.left_main_cont').eq(i).find('.book_list_time').eq(0).html(g1[i]);
+                $('.left_main_cont').eq(i).find('.pro_price_re_br').eq(0).html(h1[i]);
+
+                $('.left_main_cont').eq(i).find('.book_list_img').eq(1).find('img').attr("src",e2[i]);
+                $('.left_main_cont').eq(i).find('.book_list_pro').eq(1).html(f2[i]);
+                $('.left_main_cont').eq(i).find('.book_list_time').eq(1).html(g2[i]);
+                $('.left_main_cont').eq(i).find('.pro_price_re_br').eq(1).html(h2[i]);
+
+                $('.left_main_cont').eq(i).find('.book_list_img').eq(2).find('img').attr("src",e3[i]);
+                $('.left_main_cont').eq(i).find('.book_list_pro').eq(2).html(f3[i]);
+                $('.left_main_cont').eq(i).find('.book_list_time').eq(2).html(g3[i]);
+                $('.left_main_cont').eq(i).find('.pro_price_re_br').eq(2).html(h3[i]);
+
+                $('.left_main_cont').eq(i).find('.book_list_img').eq(3).find('img').attr("src",e4[i]);
+                $('.left_main_cont').eq(i).find('.book_list_pro').eq(3).html(f4[i]);
+                $('.left_main_cont').eq(i).find('.book_list_time').eq(3).html(g4[i]);
+                $('.left_main_cont').eq(i).find('.pro_price_re_br').eq(3).html(h4[i]);
+
+                $('.left_main_cont').eq(i).find('.book_list_img').eq(4).find('img').attr("src",e5[i]);
+                $('.left_main_cont').eq(i).find('.book_list_pro').eq(4).html(f5[i]);
+                $('.left_main_cont').eq(i).find('.book_list_time').eq(4).html(g5[i]);
+                $('.left_main_cont').eq(i).find('.pro_price_re_br').eq(4).html(h5[i]);
+
+                $('.left_main_cont').eq(i).find('.book_list_img').eq(5).find('img').attr("src",e6[i]);
+                $('.left_main_cont').eq(i).find('.book_list_pro').eq(5).html(f6[i]);
+                $('.left_main_cont').eq(i).find('.book_list_time').eq(5).html(g6[i]);
+                $('.left_main_cont').eq(i).find('.pro_price_re_br').eq(5).html(h6[i]);
+
+                $('.left_main_cont').eq(i).find('.book_list_img').eq(6).find('img').attr("src",e7[i]);
+                $('.left_main_cont').eq(i).find('.book_list_pro').eq(6).html(f7[i]);
+                $('.left_main_cont').eq(i).find('.book_list_time').eq(6).html(g7[i]);
+                $('.left_main_cont').eq(i).find('.pro_price_re_br').eq(6).html(h7[i]);
+
+                $('.left_main_cont').eq(i).find('.book_list_img').eq(7).find('img').attr("src",e8[i]);
+                $('.left_main_cont').eq(i).find('.book_list_pro').eq(7).html(f8[i]);
+                $('.left_main_cont').eq(i).find('.book_list_time').eq(7).html(g8[i]);
+                $('.left_main_cont').eq(i).find('.pro_price_re_br').eq(7).html(h8[i]);
+
+                $('.left_main_cont').eq(i).find('.book_list_img').eq(8).find('img').attr("src",e9[i]);
+                $('.left_main_cont').eq(i).find('.book_list_pro').eq(8).html(f9[i]);
+                $('.left_main_cont').eq(i).find('.book_list_time').eq(8).html(g9[i]);
+                $('.left_main_cont').eq(i).find('.pro_price_re_br').eq(8).html(h9[i]);
+
+                $('.left_main_cont').eq(i).find('.book_list_img').eq(9).find('img').attr("src",e10[i]);
+                $('.left_main_cont').eq(i).find('.book_list_pro').eq(9).html(f10[i]);
+                $('.left_main_cont').eq(i).find('.book_list_time').eq(9).html(g10[i]);
+                $('.left_main_cont').eq(i).find('.pro_price_re_br').eq(9).html(h10[i]);
+
+            }
+                $('.ancient_right').eq(i).append("<div class='ancient_right_cont'><p class='list_main_title'><span></span></p></div>")
+                $('.ancient_right_cont').eq(i).find('span').html(j1[i]);
+                $('.ancient_right_cont').eq(i).append("<ul></ul>")
+            for(let y=0;y<8;y++){
+                $('.ancient_right_cont').eq(i).find('ul').append("<li></li>");
+                $('.ancient_right_cont').eq(i).find('li').eq(y).append("<div class='f_left'><span></span></div>")
+                $('.ancient_right_cont').eq(i).find('li').eq(y).append("<div class='text_box'><a href='javascript:;' class='list_name'></a></div>")
+                $('.ancient_right_cont').eq(i).find('li').eq(y).append("<p class='list_rem_intro'></p><p class='list_shop_line'></p>")
+            }
+            $('.ancient_right_cont').eq(i).find('li').eq(0).find('.list_name').html(j2[i]);
+            $('.ancient_right_cont').eq(i).find('li').eq(0).find('.list_rem_intro').html(j3[i]);
+
+            $('.ancient_right_cont').eq(i).find('li').eq(1).find('.list_name').html(j4[i]);
+            $('.ancient_right_cont').eq(i).find('li').eq(1).find('.list_rem_intro').html(j5[i]);
+
+            $('.ancient_right_cont').eq(i).find('li').eq(2).find('.list_name').html(j6[i]);
+            $('.ancient_right_cont').eq(i).find('li').eq(2).find('.list_rem_intro').html(j7[i]);
+
+            $('.ancient_right_cont').eq(i).find('li').eq(3).find('.list_name').html(j8[i]);
+            $('.ancient_right_cont').eq(i).find('li').eq(3).find('.list_rem_intro').html(j9[i]);
+
+            $('.ancient_right_cont').eq(i).find('li').eq(4).find('.list_name').html(i1[i]);
+            $('.ancient_right_cont').eq(i).find('li').eq(4).find('.list_rem_intro').html(i2[i]);
+
+              $('.ancient_right_cont').eq(i).find('li').eq(5).find('.list_name').html(i3[i]);
+            $('.ancient_right_cont').eq(i).find('li').eq(5).find('.list_rem_intro').html(i4[i]);
+
+              $('.ancient_right_cont').eq(i).find('li').eq(6).find('.list_name').html(i5[i]);
+            $('.ancient_right_cont').eq(i).find('li').eq(6).find('.list_rem_intro').html(i6[i]);
+
+              $('.ancient_right_cont').eq(i).find('li').eq(7).find('.list_name').html(i7[i]);
+            $('.ancient_right_cont').eq(i).find('li').eq(7).find('.list_rem_intro').html(i8[i]);
+                
         }
+        $('.index_shuji').eq(1).css('background','#fff');
+        $('.zhiding').css('display','block');
     }
 })
+}
+    $(window).scroll(function(){
+        var scrollTop = $(this).scrollTop();
+        var scrollHeight = $(document).height();
+        var windowHeight = $(this).height();
+        if(scrollTop>200){
+            $('.zhiding').css('display','block');
+        }else{
+            $('.zhiding').css('display','none');
+        }
+    })
+
+$($('.hover_img')).mouseenter(function(){
+   $(this).find('.l_i_2').css('display','block');
+})
+
+$($('.hover_img')).mouseleave(function(){
+    $(this).find('.l_i_2').css('display','none');
+ })
+
+
+
+

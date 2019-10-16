@@ -55,6 +55,20 @@
       "unicode_decimal": 58908
     },
     {
+      "icon_id": "2006827",
+      "name": "回到顶部",
+      "font_class": "dingbu",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "4363301",
+      "name": "xuankuang_selected",
+      "font_class": "xuankuang_selected",
+      "unicode": "e757",
+      "unicode_decimal": 59223
+    },
+    {
       "icon_id": "5000357",
       "name": "kefu",
       "font_class": "kefu",
@@ -69,6 +83,41 @@
       "unicode_decimal": 58914
     },
     {
+      "icon_id": "7798216",
+      "name": "icon_xiapaixu",
+      "font_class": "icon_xiapaixu",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "8046840",
+      "name": "gouxuankuang",
+      "font_class": "gouxuankuang",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "8046849",
+      "name": "gouxuankuang-yigouxuan",
+      "font_class": "gouxuankuang-yigouxuan",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "8106224",
+      "name": "down",
+      "font_class": "down",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "8106260",
+      "name": "upward",
+      "font_class": "upward",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
       "icon_id": "8862834",
       "name": "dianpu",
       "font_class": "dianpu",
@@ -81,6 +130,27 @@
       "font_class": "paimai",
       "unicode": "e60e",
       "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "11249618",
+      "name": "arrow-down-2",
+      "font_class": "arrow-down-",
+      "unicode": "e82d",
+      "unicode_decimal": 59437
+    },
+    {
+      "icon_id": "11249629",
+      "name": "arrow-up-2",
+      "font_class": "arrow-up-",
+      "unicode": "e82e",
+      "unicode_decimal": 59438
+    },
+    {
+      "icon_id": "11249682",
+      "name": "check-4",
+      "font_class": "check-",
+      "unicode": "e835",
+      "unicode_decimal": 59445
     }
   ]
 }

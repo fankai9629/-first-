@@ -1,0 +1,389 @@
+@charset "UTF-8";
+.header_box {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header_box .header_box_cont {
+  width: 1000px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #b5aa9a;
+}
+.header_box .header_box_cont .h_box_l {
+  float: left;
+  height: 40px;
+  cursor: default;
+}
+.header_box .header_box_cont .h_box_l .h_box_title {
+  float: left;
+  width: 116px;
+  height: 40px;
+  background: #f3f0e9;
+  cursor: pointer;
+  text-align: center;
+}
+.header_box .header_box_cont .h_box_l .h_box_title p {
+  float: left;
+  margin-left: 20px;
+}
+.header_box .header_box_cont .h_box_l .h_box_2 {
+  float: left;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 12px;
+}
+.header_box .header_box_cont .h_box_r {
+  float: right;
+  height: 40px;
+  line-height: 35px;
+}
+.header_box .header_box_cont .h_box_r p {
+  float: left;
+  width: 99px;
+  height: 35px;
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  border-top: 1px solid #b5aa9a;
+  border-right: 1px solid #b5aa9a;
+}
+.header_box .header_box_cont .h_box_r p:first-child {
+  border-left: 1px solid #b5aa9a;
+}
+.header_box .header_box_cont .h_box_r p:nth-child(2) {
+  background-color: #b5aa9a;
+}
+.header_box .header_box_cont .h_box_r p:nth-child(2) a {
+  color: #fff;
+}
+.header_box .header_box_cont .h_box_r p a {
+  color: #666;
+}
+
+/*
+  *搜索部分
+  */
+.search_main {
+  width: 1200px;
+  margin: 0 auto;
+  height: 2100px;
+}
+.search_main .filtor_box {
+  width: 179px;
+  float: left;
+  height: 2000px;
+  background: #f7f7f6;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.search_main .filtor_box .filtor_item {
+  width: 154px;
+  padding: 0 10px 16px 15px;
+}
+.search_main .filtor_box .filtor_item p {
+  margin-top: 18px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #999;
+}
+.search_main .filtor_box .filtor_item span {
+  display: block;
+  margin-top: 12px;
+  line-height: 20px;
+  color: #333;
+  font-size: 12px;
+}
+.search_main .filtor_box .filtor_item a {
+  display: block;
+  color: #333;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 4px;
+  margin-left: 12px;
+  width: auto;
+}
+.search_main .filtor_box .filtor_item a:hover {
+  color: #8c222c;
+}
+.search_main .result_box {
+  width: 820px;
+  float: left;
+  height: 2000px;
+  border-top: 1px solid #ccc;
+}
+.search_main .search_adv {
+  width: 200px;
+  float: left;
+  height: 2000px;
+}
+
+/*
+*中间重要部分
+*/
+.result_box .result_top {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  background-color: #f2f1ea;
+}
+.result_box .result_top .order_box:after {
+  clear: both;
+  height: 0;
+  width: 100%;
+  font-size: 0;
+  display: block;
+  overflow: hidden;
+  content: "";
+}
+.result_box .result_top .res_hv1 {
+  color: #bf7f5f;
+}
+.result_box .result_top .res_item {
+  position: relative;
+  display: block;
+  float: left;
+  height: 40px;
+  color: #666;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.result_box .result_top .res_item .icon-arrow-up- {
+  position: absolute;
+  width: 12px;
+  font-size: 10px;
+  top: -4px;
+  right: -2px;
+  color: #aaa;
+  font-weight: 400;
+}
+.result_box .result_top .res_item .icon-arrow-up-1 {
+  display: none;
+  color: #bf7f5f !important;
+}
+.result_box .result_top .res_item .icon-arrow-down- {
+  position: absolute;
+  width: 12px;
+  font-size: 10px;
+  top: 4px;
+  right: -2px;
+  color: #aaa;
+  font-weight: 400;
+}
+.result_box .result_top .filter-status {
+  padding: 0 25px;
+}
+.result_box .result_top .filter-status .icon-gouxuankuang {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  font-size: 12px;
+  color: #bf7f5f;
+}
+.result_box .result_top .filter-status .icon-xuankuang_selected {
+  position: absolute;
+  top: 1px;
+  font-size: 12px;
+  left: 10px;
+  color: #bf7f5f;
+}
+
+/*
+*数据阶段
+*/
+.result_main {
+  width: 780px;
+  margin-left: 40px;
+}
+
+.result_cont {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e5e5e5;
+  height: 155px;
+}
+.result_cont .item-img {
+  position: relative;
+  float: left;
+  width: 140px;
+  /*
+  *小图
+  */
+  /*
+  *大图
+  */
+}
+.result_cont .item-img .item-img-i {
+  display: block;
+  width: 100%;
+  height: 140px;
+  margin-bottom: 15px;
+  line-height: 138px;
+  font-size: 0;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.result_cont .item-img .item-img-i img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+.result_cont .item-img .big-img-box {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  z-index: 91;
+  width: 300px;
+  height: 300px;
+  line-height: 298px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 0 2px #e5e5e5;
+}
+.result_cont .item-img .big-img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+.item-info {
+  float: left;
+  width: 420px;
+  margin: 4px 34px 4px 20px;
+}
+.item-info .item-info-title {
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+}
+.item-info .item-info-title a {
+  color: #365899;
+}
+.item-info .item-info-ind {
+  margin: 12px 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: #333;
+}
+.item-info .item-info-ind span {
+  display: inline-block;
+}
+
+.item-other-info {
+  float: left;
+  width: 166px;
+  margin-top: 4px;
+  font-size: 12px;
+  text-align: right;
+  /**新书*/
+  /**旧书*/
+}
+.item-other-info:after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.item-other-info .price-box {
+  line-height: 20px;
+  margin-bottom: 14px;
+}
+.item-other-info .price-box .price-info {
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item-other-info .price-box .price-info .book-type {
+  font-size: 12px;
+  color: #333;
+}
+.item-other-info .price-box .price-info .new-price {
+  font-size: 16px;
+  color: #8c222c;
+}
+.item-other-info .price-box .shop-num-info {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item-other-info .price-box .shop-num-info a {
+  color: #999;
+}
+.item-other-info .price-box1 {
+  line-height: 20px;
+  margin-bottom: 14px;
+}
+.item-other-info .price-box1 .price-info {
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item-other-info .price-box1 .price-info .book-type {
+  font-size: 12px;
+  color: #333;
+}
+.item-other-info .price-box1 .price-info .new-price {
+  font-size: 16px;
+  color: #8c222c;
+}
+.item-other-info .price-box1 .shop-num-info {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item-other-info .price-box1 .shop-num-info a {
+  color: #999;
+}
+
+/*
+*右下角固定广告*/
+.search_adv .adv_img {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+.search_adv .adv_img a img {
+  height: 200px;
+}
+.search_adv .adv_img .guanbi {
+  position: fixed;
+  right: 0;
+  bottom: 186px;
+  z-index: 10000;
+}
+.search_adv .adv_img .guanbi img {
+  width: 20px;
+  height: 20px;
+}
+.search_adv .adv_img span {
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 16px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=list.css.map */
