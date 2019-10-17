@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/shopingcom.css">
     <script src="../js/cookie.js"></script>
     <script src="../dist/jquery.js"></script>
     <link rel="stylesheet" href="../css/common_css/li_ul_a.css">
     <link rel="stylesheet" href="../css/iconfont/font_main/iconfont.css">
+    <link rel="stylesheet" href="../css/shoping.css">
+    <link rel="stylesheet" href="../css/shopingcom.css">
     <title>Document</title>
 </head>
+
 <body>
     <header style="background: #f7f7f6">
 
@@ -130,7 +133,146 @@
         </div>
     </nav>
 
+    <!-- 主体部分 -->
+    <main>
+        <div class="main_header">
+            <!-- 头部标题-->
+            <div class="main_head">
+                <div class="pull_left th_check">
+                    <div class="select_all">
+                        <div class="check_box">
+                            <input type="check" name value>
+                            <label>
+                                <span class="iconfont select-all icon-gouxuankuang"></span>
+                            </label>
+                        </div>
+                        全选
+                    </div>
+                </div>
+                <div class="pull_left th_item">
+                    <div class="btgoods">商品</div>
+                </div>
+                <div class="pull_left th_pin">品相</div>
+                <div class="pull_left th_price">单价</div>
+                <div class="pull_left th_num">数量</div>
+                <div class="pull_left th_price_rig">金额</div>
+                <div class="pull_right th_edit">
+                    <div class="inner">操作</div>
+                </div>
+            </div>
+            <!-- 内容 -->
+            <div class="order_content">
+                <!--   <ul>
+                     <li class="pull_left td-check">
+                        <div class="check_top">
+                            <div class="check-box">
+                                <input type="checkbox" name value>
+                                <label for="">
+                                    <span class="iconfont icon-gouxuankuang"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li> -->
 
+                <!-- <li class="pull_left td-item">
+                        <!-- 图文 
+                        <div class="td-inner">
+                                <!-- 图片
+                            <div class="cart_pic pull_left">
+                                <a href="javascript:;">
+                                    <img src="https://www.kfzimg.com/G06/M00/D5/10/p4YBAFqYt2WAfBu9AAFY2ggtiYc881_s.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- 文字 
+                            <div class="text_box">
+                                <a href="javascript:;" class="shopname">关键对话</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pull_left td-pin">
+                        <div class="td-inner">
+                            全新
+                        </div>
+                    </li>
+                    <li class="pull_left td-price">
+                        <div class="td-inner">
+                            8.80
+                        </div>
+                    </li>
+                    <li class="pull_left td-num">
+                        <div class="td-inner">
+                            <div class="input_box">
+                                <a href="javascript:;" class="btn_book_minus">-</a>
+                                <input type="text" value="1" maxlength="3">
+                                <a href="javascrpt:;" class>+</a>
+                            </div>
+                            <div class="stock_info">
+                                库存仅剩12件
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pull_left td-price-rig">
+                        <div class="td-price-rig-title">
+                            8.80
+                        </div>
+                    </li>
+                    <li class="pull_right th-edit">
+                        <div class="td-inner">
+                                <p>
+                                    <a href="javascript:;">删除</a>
+                                </p>
+                        </div>
+                        <div class="td_hide">
+                            <p>确定删除吗？</p>
+                            <div class="m_t10">
+                                <a href="javascript:;" class="btn_cancel ">取消</a>
+                                <a href="javascript:;" class="btn_del">删除</a>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul> -->
+            </div>
+            <!-- <div class="gray_box">
+                <div class="gray_box_cont">
+                    <div class="clearfix">
+                        <!-- 左边 
+                        <div class="cart_opration">
+                            <div class="m_r12">
+                              <!--   全选 
+                                <div class="section_all">
+                                  <!--   选择框 
+                                    <div class="check_box">
+                                        <input type="checkbox" name="" value="">
+                                        <label><span class="iconfont icon-gouxuankuang"></span></label>
+                                    </div>
+                                    全选
+                                </div>
+                            </div>
+                        </div>
+                         右边个 
+                        <div class="btn_submit">
+                            <a href="javascript:;" class="btn_pay">去结算</a>
+                        </div>
+                        <!-- 中间一个 
+                        <div class="cart_sta_box">
+                            <span class="pull-left">已选
+                                <span class="red fb" name="cartSecBookNum">0</span>件商品, 
+                            </span>
+                            <span>合计（不含运费）</span>
+                            <div class="m_r20 red">
+                                <span class="font18">￥</span>
+                                <span class="font26" name="cartTotalPrice">100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+        </div>
+    </main>
 
 
 
@@ -144,7 +286,7 @@
 
     <!-- 底部 -->
     <footer>
-            <div class="footer">
+        <div class="footer">
             <div class="footer_l">
                 <p>© 2002-2019 Kongfz.com 孔夫子旧书网 版权所有</p>
             </div>
@@ -160,7 +302,9 @@
                 <a href="javascript:;">图书标签</a>
             </div>
         </div>
-        </footer>
+    </footer>
 </body>
 <script src="../js/shopingcom.js"></script>
+<script src="..//js/shoping.js"></script>
+
 </html>

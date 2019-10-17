@@ -188,7 +188,6 @@
     width: 1200px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
 
     .main_top {
         margin: 30px 0 30px 0;
@@ -198,7 +197,6 @@
             width: 1000px;
             float: left;
             position: relative;
-
             /**左边图片*/
             .marjor_img {
                 width: 300px;
@@ -557,9 +555,23 @@
         .buy-left_2 {
             background: #8c222c;
             margin-left: 20px;
-
+            position: relative;
+            z-index: 100;
             a {
                 color: #fff;
+                .paowuxian{
+                    width: 30px!important;
+                    height: 30px!important;
+                    position: absolute;
+                    display: none;
+                    z-index: 99999999;
+                    top: 40%;
+                    img{
+                      width: 100%!important;
+                      height: 100%!important;
+                    }
+                  }
+                
             }
         }
     }
@@ -629,14 +641,18 @@
 .store_func {
     width: 200px;
     float: right;
-
+    overflow: hidden;
+    z-index: 100;
+    position: relative;
     .store_ins {
         border: 1px solid #ccc;
         box-sizing: border-box;
+        overflow: hidden;
 
         /**头部*/
         .store_ins_t {
             border-top: 2px solid #97A69C;
+            overflow: hidden;
 
             .store_content {
                 position: relative;
@@ -768,7 +784,7 @@
         }
     }
     span{
-        display: block;
+        display: none                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
         font-size: 8px;
         width: 10px;
         height: 10px;
@@ -907,7 +923,6 @@
 .main_bot_rh_cont{
     padding-top: 5px;
     position: relative;
-    overflow: hidden;
     min-height: 50px;
     width: 820px;
     padding-bottom: 25px;

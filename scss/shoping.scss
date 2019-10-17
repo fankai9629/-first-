@@ -1,0 +1,427 @@
+main{
+    width: 100%;
+    margin: 0 auto;
+    /**内容*/
+    .main_header{
+        width: 1000px;
+        margin: auto;
+        overflow: hidden;
+        height: 600px;     
+        .pull_left{
+            float: left;
+        }
+        .pull_right{
+            float: right;
+        }
+        /**标题*/
+        .main_head{
+            height: 40px;
+            font-size: 12px;
+            color: #ccc;
+            line-height: 40px;
+            border-bottom: 1px solid #ccc;
+            /**全选*/
+            .th_check{
+                cursor: pointer;
+                position: relative;
+                height: 40px;
+                width: 40px;
+                .select_all{
+                    position: absolute;
+                    width: 60px;
+                    line-height: 40px;
+                    .check_box{
+                        display: block;
+                        line-height: 17px;
+                        margin: 12px 5px 0 10px;
+                        position: relative;
+                        width: 16px;
+                        height: 16px;
+                        overflow: hidden;
+                        float: left;
+                        input{
+                            position: absolute;
+                            z-index: 0;
+                            left: -20px;
+                            top: -20px;
+                            }
+                            label{
+                                z-index: 1;
+                                cursor: pointer;
+                                color: #333;
+                                text-align: center;
+                                span{
+                                    color: #ccc;
+                                    font-size: 14px;
+                                }
+                        }
+                    }
+                }
+            }
+           
+            /**商品*/
+            .th_item{
+                width: 458px;
+                .btgoods{
+                    padding: 0 0 0 188px;
+                }
+            }
+            /**品相*/
+            .th_pin{
+                width: 87px;
+            }
+            /**单价*/
+            .th_price{
+                width: 75px;
+            }
+            /**数量*/
+            .th_num{
+                width: 148px;
+                text-align: center;
+            }
+            /**金额*/
+            .th_price_rig{
+                width: 73px;
+                text-align: right;
+            }
+            /**操作*/
+            .th_edit{
+                width: 119px;
+                .inner{
+                    margin-right: 10px;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+/**内容*/
+.order_content{
+    ul{
+        border-bottom: 1px dashed #e5e5e5;
+        height: 108px;
+        overflow: hidden;
+        font-size: 12px;
+        line-height: 20px;
+        &:before{
+            content: ".";
+            display: block;
+            height: 0;
+            line-height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        
+
+    }
+    /**框*/
+    .td-check{
+        width: 40px;
+        .check-box{
+            display: block;
+            line-height: 17px;
+            margin: 12px 5px 0 10px;
+            margin-top: 52px;
+            position: relative;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            float: left;
+            .input{
+                position: absolute;
+                z-index: 0;
+                left: -20px;
+                top: -20px;
+            }
+            .label{
+                z-index: 1;
+                cursor: pointer;
+                color: #333;
+                text-align: center;
+                span{
+                    color: #ccc;
+                    font-size: 14px;
+                }
+            }
+
+            }
+
+        }
+        /**图片部分*/
+    .td-item{
+        width: 458px;
+        .td-inner{
+            margin-top: 14px;
+            .cart_pic{
+                margin-right: 20px;
+                a{
+                    width: 80px;
+                    height: 80px;
+                    display: inline-block;
+                    line-height: 80px;
+                    text-align: center;
+                    border: 1px solid #e5e5e5;
+                    background-color: #fff;
+                    font-size: 0;
+                    box-sizing: content-box;
+                    color: #333;
+                    img{
+                        max-width: 80px;
+                        max-height: 80px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            /**文字*/
+            .text_box{
+                padding-right: 55px;
+                height: 85px;
+                a{
+                    color: #333;
+                }
+            }
+        }
+    }
+    /**全新*/
+    .td-pin{
+        width: 87px;
+        .td-inner{
+            padding-top: 16px;
+        }
+    }
+    /**单价*/
+    .td-price{
+        width: 75px;
+        .td-inner{
+            padding-top: 16px;
+        }
+    }
+    /**添加减少*/
+    .td-num{
+        width: 148px;
+        text-align: center;
+        .td-inner{
+            padding-top: 16px;
+           .input_box{
+            display: inline-block;
+            a{
+                line-height: 23px;
+                display: block;
+                float: left;
+                border: 1px solid #ccc;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                font-size: 17px;
+                font-weight: 500;
+                color:#ccc;
+            }
+            input{
+            float: left;
+            border: 1px solid #ccc;
+            border-left: none;
+            border-right: none;
+            height: 25px;
+            width: 38px;
+            text-align: center;
+                }
+            }
+            stock_info{
+                color: #8c222c;
+                margin-top: -3px;
+            }
+        }
+    }
+    /**金额*/
+    .td-price-rig{
+        width: 73px;
+        text-align: right;
+        .td-price-rig-title{
+            margin-top: 16px;
+            font-weight: 700;
+        }
+    }
+    /**操作*/
+    .th-edit{
+        width: 99px;
+        text-align: right;
+        margin-left: 10px;
+
+        .td-inner{
+            padding-right: 10px;
+            text-align: right;
+            padding-top: 16px;
+            p{
+                position: relative;
+                a{
+                    color: #333
+                }
+            }
+        }
+        .td_hide{
+            border-left: 1px solid #ccc;
+            background: #f5f5f5;
+            text-align: center;
+            padding-top: 16px;
+            display: none;
+            .m_t10{
+                margin-top: 10px;
+                a{
+                    display: inline-block;
+                    text-align: center;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    border-radius: 2px;
+                }
+                .btn_cancel{
+                    width: 40px;
+                    height: 23px;
+                    color: #666;
+                    background-color: #fff;
+                    font-size: 12px;
+                    border: 1px solid #aeaeae;
+                    line-height: 21px;
+                 }
+                 .btn_del{
+                    width: 40px;
+                    height: 23px;
+                    color: #fff;
+                    background-color: #8c222c;
+                    font-size: 12px;
+                    border: 1px solid #8c222c;
+                    line-height: 21px;
+                 }
+            }
+        }
+    }
+
+}
+/**提示*/
+.ti_s{
+    line-height: 150px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+}
+
+// 吸尾条
+.gray_box{
+    background: #eee;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 1000px;
+    border-top: 1px solid #fff;
+    .gray_box_cont{
+        width: 1000px;
+        margin: 0 auto;
+        .clearfix{
+        &:before{
+            content: ".";
+            display: block;
+            height: 0;
+            line-height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        &:after{
+            content: ".";
+            display: block;
+            height: 0;
+            line-height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .cart_opration{
+            line-height: 50px;
+            font-size: 12px;
+            position: relative;
+            float: left;
+            .m_r12{
+                cursor: pointer;
+                position: relative;
+                width: 60px;
+                height: 50px;
+                font-size: 12px;
+                color: #333;
+                .section_all{
+                    position: absolute;
+                    width: 60px;
+                    line-height: 50px;
+                    div{
+                        display: block;
+                        margin: 17px 5px 0 10px;
+                        line-height: 14px;
+                        position: relative;
+                        width: 14px;
+                        height: 14px;
+                        overflow: hidden;
+                        float: left;
+                        input{
+                            position: absolute;
+                            z-index: 0;
+                            left: -20px;
+                            top: -20px;
+                        }
+                        label{
+                            z-index: 1;
+                            cursor: pointer;
+                            color: #333;
+                            background-color: #fff;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        /**右边*/
+        .btn_submit{
+            float: right;
+            a{
+                width: 100px;
+                height: 49px;
+                line-height: 49px;
+                font-size: 20px;
+                display: block;
+                border-radius: 0;
+                color: #fff;
+                text-align: center;
+                background-color: #7b111b;
+            }
+        }
+        /**中间*/
+        .cart_sta_box{
+            float: right;
+            .pull-left{
+                float: left;
+            }
+            span{
+                float: left;
+            }
+            .m_r20{
+                float: left;
+                line-height: 48px;
+                font-weight: 700;
+                margin-right: 20px;
+            }
+            .red{
+                color:#8c222c;
+            }
+            .font18{
+                font-size: 18px;
+                color:#8c222c;
+            }
+            .font26{
+                font-size: 26px;
+                color:#8c222c;
+            }
+        }
+    }
+    }
+}
+

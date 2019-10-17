@@ -1,0 +1,347 @@
+@charset "UTF-8";
+main {
+  width: 100%;
+  margin: 0 auto;
+  /**内容*/ }
+  main .main_header {
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    height: 600px;
+    /**标题*/ }
+    main .main_header .pull_left {
+      float: left; }
+    main .main_header .pull_right {
+      float: right; }
+    main .main_header .main_head {
+      height: 40px;
+      font-size: 12px;
+      color: #ccc;
+      line-height: 40px;
+      border-bottom: 1px solid #ccc;
+      /**全选*/
+      /**商品*/
+      /**品相*/
+      /**单价*/
+      /**数量*/
+      /**金额*/
+      /**操作*/ }
+      main .main_header .main_head .th_check {
+        cursor: pointer;
+        position: relative;
+        height: 40px;
+        width: 40px; }
+        main .main_header .main_head .th_check .select_all {
+          position: absolute;
+          width: 60px;
+          line-height: 40px; }
+          main .main_header .main_head .th_check .select_all .check_box {
+            display: block;
+            line-height: 17px;
+            margin: 12px 5px 0 10px;
+            position: relative;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            float: left; }
+            main .main_header .main_head .th_check .select_all .check_box input {
+              position: absolute;
+              z-index: 0;
+              left: -20px;
+              top: -20px; }
+            main .main_header .main_head .th_check .select_all .check_box label {
+              z-index: 1;
+              cursor: pointer;
+              color: #333;
+              text-align: center; }
+              main .main_header .main_head .th_check .select_all .check_box label span {
+                color: #ccc;
+                font-size: 14px; }
+      main .main_header .main_head .th_item {
+        width: 458px; }
+        main .main_header .main_head .th_item .btgoods {
+          padding: 0 0 0 188px; }
+      main .main_header .main_head .th_pin {
+        width: 87px; }
+      main .main_header .main_head .th_price {
+        width: 75px; }
+      main .main_header .main_head .th_num {
+        width: 148px;
+        text-align: center; }
+      main .main_header .main_head .th_price_rig {
+        width: 73px;
+        text-align: right; }
+      main .main_header .main_head .th_edit {
+        width: 119px; }
+        main .main_header .main_head .th_edit .inner {
+          margin-right: 10px;
+          text-align: right; }
+
+/**内容*/
+.order_content {
+  /**框*/
+  /**图片部分*/
+  /**全新*/
+  /**单价*/
+  /**添加减少*/
+  /**金额*/
+  /**操作*/ }
+  .order_content ul {
+    border-bottom: 1px dashed #e5e5e5;
+    height: 108px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px; }
+    .order_content ul:before {
+      content: ".";
+      display: block;
+      height: 0;
+      line-height: 0;
+      clear: both;
+      visibility: hidden; }
+  .order_content .td-check {
+    width: 40px; }
+    .order_content .td-check .check-box {
+      display: block;
+      line-height: 17px;
+      margin: 12px 5px 0 10px;
+      margin-top: 52px;
+      position: relative;
+      width: 16px;
+      height: 16px;
+      overflow: hidden;
+      float: left; }
+      .order_content .td-check .check-box .input {
+        position: absolute;
+        z-index: 0;
+        left: -20px;
+        top: -20px; }
+      .order_content .td-check .check-box .label {
+        z-index: 1;
+        cursor: pointer;
+        color: #333;
+        text-align: center; }
+        .order_content .td-check .check-box .label span {
+          color: #ccc;
+          font-size: 14px; }
+  .order_content .td-item {
+    width: 458px; }
+    .order_content .td-item .td-inner {
+      margin-top: 14px;
+      /**文字*/ }
+      .order_content .td-item .td-inner .cart_pic {
+        margin-right: 20px; }
+        .order_content .td-item .td-inner .cart_pic a {
+          width: 80px;
+          height: 80px;
+          display: inline-block;
+          line-height: 80px;
+          text-align: center;
+          border: 1px solid #e5e5e5;
+          background-color: #fff;
+          font-size: 0;
+          box-sizing: content-box;
+          color: #333; }
+          .order_content .td-item .td-inner .cart_pic a img {
+            max-width: 80px;
+            max-height: 80px;
+            vertical-align: middle; }
+      .order_content .td-item .td-inner .text_box {
+        padding-right: 55px;
+        height: 85px; }
+        .order_content .td-item .td-inner .text_box a {
+          color: #333; }
+  .order_content .td-pin {
+    width: 87px; }
+    .order_content .td-pin .td-inner {
+      padding-top: 16px; }
+  .order_content .td-price {
+    width: 75px; }
+    .order_content .td-price .td-inner {
+      padding-top: 16px; }
+  .order_content .td-num {
+    width: 148px;
+    text-align: center; }
+    .order_content .td-num .td-inner {
+      padding-top: 16px; }
+      .order_content .td-num .td-inner .input_box {
+        display: inline-block; }
+        .order_content .td-num .td-inner .input_box a {
+          line-height: 23px;
+          display: block;
+          float: left;
+          border: 1px solid #ccc;
+          width: 25px;
+          height: 25px;
+          text-align: center;
+          font-size: 17px;
+          font-weight: 500;
+          color: #ccc; }
+        .order_content .td-num .td-inner .input_box input {
+          float: left;
+          border: 1px solid #ccc;
+          border-left: none;
+          border-right: none;
+          height: 25px;
+          width: 38px;
+          text-align: center; }
+      .order_content .td-num .td-inner stock_info {
+        color: #8c222c;
+        margin-top: -3px; }
+  .order_content .td-price-rig {
+    width: 73px;
+    text-align: right; }
+    .order_content .td-price-rig .td-price-rig-title {
+      margin-top: 16px;
+      font-weight: 700; }
+  .order_content .th-edit {
+    width: 99px;
+    text-align: right;
+    margin-left: 10px; }
+    .order_content .th-edit .td-inner {
+      padding-right: 10px;
+      text-align: right;
+      padding-top: 16px; }
+      .order_content .th-edit .td-inner p {
+        position: relative; }
+        .order_content .th-edit .td-inner p a {
+          color: #333; }
+    .order_content .th-edit .td_hide {
+      border-left: 1px solid #ccc;
+      background: #f5f5f5;
+      text-align: center;
+      padding-top: 16px;
+      display: none; }
+      .order_content .th-edit .td_hide .m_t10 {
+        margin-top: 10px; }
+        .order_content .th-edit .td_hide .m_t10 a {
+          display: inline-block;
+          text-align: center;
+          vertical-align: middle;
+          cursor: pointer;
+          white-space: nowrap;
+          border-radius: 2px; }
+        .order_content .th-edit .td_hide .m_t10 .btn_cancel {
+          width: 40px;
+          height: 23px;
+          color: #666;
+          background-color: #fff;
+          font-size: 12px;
+          border: 1px solid #aeaeae;
+          line-height: 21px; }
+        .order_content .th-edit .td_hide .m_t10 .btn_del {
+          width: 40px;
+          height: 23px;
+          color: #fff;
+          background-color: #8c222c;
+          font-size: 12px;
+          border: 1px solid #8c222c;
+          line-height: 21px; }
+
+/**提示*/
+.ti_s {
+  line-height: 150px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: #333; }
+
+.gray_box {
+  background: #eee;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 1000px;
+  border-top: 1px solid #fff; }
+  .gray_box .gray_box_cont {
+    width: 1000px;
+    margin: 0 auto; }
+    .gray_box .gray_box_cont .clearfix {
+      /**右边*/
+      /**中间*/ }
+      .gray_box .gray_box_cont .clearfix:before {
+        content: ".";
+        display: block;
+        height: 0;
+        line-height: 0;
+        clear: both;
+        visibility: hidden; }
+      .gray_box .gray_box_cont .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        line-height: 0;
+        clear: both;
+        visibility: hidden; }
+      .gray_box .gray_box_cont .clearfix .cart_opration {
+        line-height: 50px;
+        font-size: 12px;
+        position: relative;
+        float: left; }
+        .gray_box .gray_box_cont .clearfix .cart_opration .m_r12 {
+          cursor: pointer;
+          position: relative;
+          width: 60px;
+          height: 50px;
+          font-size: 12px;
+          color: #333; }
+          .gray_box .gray_box_cont .clearfix .cart_opration .m_r12 .section_all {
+            position: absolute;
+            width: 60px;
+            line-height: 50px; }
+            .gray_box .gray_box_cont .clearfix .cart_opration .m_r12 .section_all div {
+              display: block;
+              margin: 17px 5px 0 10px;
+              line-height: 14px;
+              position: relative;
+              width: 14px;
+              height: 14px;
+              overflow: hidden;
+              float: left; }
+              .gray_box .gray_box_cont .clearfix .cart_opration .m_r12 .section_all div input {
+                position: absolute;
+                z-index: 0;
+                left: -20px;
+                top: -20px; }
+              .gray_box .gray_box_cont .clearfix .cart_opration .m_r12 .section_all div label {
+                z-index: 1;
+                cursor: pointer;
+                color: #333;
+                background-color: #fff;
+                text-align: center; }
+      .gray_box .gray_box_cont .clearfix .btn_submit {
+        float: right; }
+        .gray_box .gray_box_cont .clearfix .btn_submit a {
+          width: 100px;
+          height: 49px;
+          line-height: 49px;
+          font-size: 20px;
+          display: block;
+          border-radius: 0;
+          color: #fff;
+          text-align: center;
+          background-color: #7b111b; }
+      .gray_box .gray_box_cont .clearfix .cart_sta_box {
+        float: right; }
+        .gray_box .gray_box_cont .clearfix .cart_sta_box .pull-left {
+          float: left; }
+        .gray_box .gray_box_cont .clearfix .cart_sta_box span {
+          float: left; }
+        .gray_box .gray_box_cont .clearfix .cart_sta_box .m_r20 {
+          float: left;
+          line-height: 48px;
+          font-weight: 700;
+          margin-right: 20px; }
+        .gray_box .gray_box_cont .clearfix .cart_sta_box .red {
+          color: #8c222c; }
+        .gray_box .gray_box_cont .clearfix .cart_sta_box .font18 {
+          font-size: 18px;
+          color: #8c222c; }
+        .gray_box .gray_box_cont .clearfix .cart_sta_box .font26 {
+          font-size: 26px;
+          color: #8c222c; }
+
+/*# sourceMappingURL=shoping.css.map */

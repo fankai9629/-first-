@@ -159,7 +159,6 @@
   width: 1200px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
 }
 .main_content .main_top {
   margin: 30px 0 30px 0;
@@ -465,9 +464,23 @@
 .buy-group .buy-group-left .buy-left_2 {
   background: #8c222c;
   margin-left: 20px;
+  position: relative;
+  z-index: 100;
 }
 .buy-group .buy-group-left .buy-left_2 a {
   color: #fff;
+}
+.buy-group .buy-group-left .buy-left_2 a .paowuxian {
+  width: 30px !important;
+  height: 30px !important;
+  position: absolute;
+  display: none;
+  z-index: 99999999;
+  top: 40%;
+}
+.buy-group .buy-group-left .buy-left_2 a .paowuxian img {
+  width: 100% !important;
+  height: 100% !important;
 }
 .buy-group .buy-group-right {
   float: right;
@@ -525,16 +538,21 @@
 .store_func {
   width: 200px;
   float: right;
+  overflow: hidden;
+  z-index: 100;
+  position: relative;
 }
 .store_func .store_ins {
   border: 1px solid #ccc;
   box-sizing: border-box;
+  overflow: hidden;
   /**头部*/
   /**书店*/
   /**店铺等级*/
 }
 .store_func .store_ins .store_ins_t {
   border-top: 2px solid #97A69C;
+  overflow: hidden;
 }
 .store_func .store_ins .store_ins_t .store_content {
   position: relative;
@@ -646,7 +664,7 @@
   font-size: 20px;
 }
 .guding span {
-  display: block;
+  display: none;
   font-size: 8px;
   width: 10px;
   height: 10px;
@@ -781,7 +799,6 @@
 .main_bot_rh_cont {
   padding-top: 5px;
   position: relative;
-  overflow: hidden;
   min-height: 50px;
   width: 820px;
   padding-bottom: 25px;
