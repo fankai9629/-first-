@@ -29,7 +29,8 @@ function fn1(){  //综合
                     $('.price-box1').eq(i).find('.new-price').html("￥"+a.contents[i][7]); //价格
                     $('.price-box1').eq(i).append("<div class='shop-num-info'><a href='javascript:;' class='book-shop'></a></div>")
                     $('.price-box1').eq(i).find('.book-shop').html(a.contents[i][8]);  //有售
-                }   
+                }  
+                $('.result_cont').eq(0).find('a').attr('href','./des.html');
             }
     })
 } 

@@ -113,3 +113,27 @@ $($('.rh_cont_ul').find('li')).click(function(){
     $('.iconquan').eq($(this).index()).css('background','red');
     $(this).siblings().find('.iconquan').css('background','#f2f6f5');
 })
+
+// 加减
+$('.icon-jian').click(function(){
+   var  m=$('.gouwu_2').val();
+    m--;
+    if(m<=1){
+        m=1;
+        $('.gouwu_2').val(m);
+    } else{
+        $('.gouwu_2').val(m);
+    }
+})
+
+$('.icon-jia').click(function(){
+    var  m=$('.gouwu_2').val();
+    console.log(m)
+    m++;
+    if(m>=6){
+        m=6;
+        $('.gouwu_2').val(m);
+    } else{
+        $('.gouwu_2').val(m);
+    }
+})

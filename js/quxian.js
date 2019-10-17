@@ -156,11 +156,17 @@ var funParabola = function (d, t, g) {
 
 
 $('.buy-left_2').click(function(){
+    
+    var data = "url="+$('.marjor_bg').find('a').find('img').attr("src")+"&name="+$('.info_ti').html()+"&price="+$('.dis_price').html()+"&num="+$('.gouwu_2').val();
+        console.log(data);
+    ajax('post','../server/descharu.php',data,function(a){
+    })
+
+
     var paowuxian = document.getElementsByClassName('paowuxian')[0];//移动的元素
 var guding = document.getElementsByClassName('guding')[0];//目标元素
 // 初始化抛物线动画
 paowuxian.style.display = 'block';
-
 var parabola = funParabola(paowuxian, guding,{
     speed: 150,// 每帧移动的像素大小
     curvature: 0.001,// 实际指焦点到准线的距离

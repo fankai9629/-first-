@@ -11,20 +11,23 @@ $arr =[
 ];
 $m =new MMysql($arr);
 
-$src = $_POST['src'];
+$url = $_POST['url'];
 
-$sql ="delete * from shoping where src='$src';";
+$sql ="delete  from shoping where url='$url';";
 
 $info =$m->doSql($sql);
 
+
 if($info){
     $arr=[
-        "status":"ok";
+        "status"=>"ok",
+        "message"=>"删除成功"
     ];
-    echo $arr;
-
+    echo json_encode($arr);
 }else{
-    $arr=>[
-        "status":'fail';
+    $arr=[
+        "status"=>"fail",
+        "message"=>"删除失败"
     ];
-};
+    echo json_encode($arr);
+}

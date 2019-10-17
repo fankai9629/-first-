@@ -7,7 +7,7 @@ main {
     width: 1000px;
     margin: auto;
     overflow: hidden;
-    height: 600px;
+    margin-bottom: 50px;
     /**标题*/ }
     main .main_header .pull_left {
       float: left; }
@@ -343,5 +343,8 @@ main {
         .gray_box .gray_box_cont .clearfix .cart_sta_box .font26 {
           font-size: 26px;
           color: #8c222c; }
+
+.icon-check- {
+  color: #8c222c !important; }
 
 /*# sourceMappingURL=shoping.css.map */

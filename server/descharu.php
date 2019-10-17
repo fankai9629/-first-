@@ -9,27 +9,29 @@ $arr =[
     'passwd'=>'fankai',
     'dbname'=>'t2'
 ];
-
 $m =new MMysql($arr);
 
-$phone=$_POST['phone'];
-$username=$_POST['username'];
-$password=$_POST['password'];
+$url = $_POST['url'];
+$name = $_POST['name'];
+$price = $_POST['price'];
+$num = $_POST['num'];
 
-$sql="insert into kfz(phone,username,password) values('$phone','$username','$password');";
+
+
+$sql="insert into shoping(url,name,price,num) values('$url','$name','$price','$num');";
 
 $info=$m->doSql($sql);
 
 if($info){
     $arr=[
         "status"=>"ok",
-        "message"=>"注册成功,正在跳转登录页面"
+        "message"=>"添加成功"
     ];
     echo json_encode($arr);
 }else{
     $arr=[
-        "status"=>"fail",
-        "message"=>"注册失败"
+        "status"=>"ok",
+        "message"=>"添加失败"
     ];
     echo json_encode($arr);
 }

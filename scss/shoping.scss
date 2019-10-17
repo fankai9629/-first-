@@ -6,7 +6,7 @@ main{
         width: 1000px;
         margin: auto;
         overflow: hidden;
-        height: 600px;     
+        margin-bottom: 50px;  
         .pull_left{
             float: left;
         }
@@ -424,4 +424,6 @@ main{
     }
     }
 }
-
+.icon-check-{
+    color: #8c222c!important;
+}
